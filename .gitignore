@@ -1,0 +1,36 @@
+# Exclude virtual environment
+.venv/
+venv
+
+# Exclude main script
+app.py
+chatbot.py
+
+# Common Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.iml
+
+static
+fine-tuned-distilbert-intents-augmented
+flask_session
+logs1
+logs_augmented
+ner_model1
+results_augmented
+static
+
+
+label_encoder.json
+ner_dataset_multiword.json
+
+testIntent.ipynb
+n.ipynb

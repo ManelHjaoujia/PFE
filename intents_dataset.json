@@ -1,0 +1,2214 @@
+[
+  {
+    "text": "Bonsoir, je peux vous poser une question ?",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonjour monsieur",
+    "intent": "salutation"
+  },
+  {
+    "text": "Hello",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonjour, pouvez-vous m''aider ?",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonjour, j’ai une question",
+    "intent": "salutation"
+  },
+  {
+    "text": "Salut, j’aimerais avoir des infos",
+    "intent": "salutation"
+  },
+  {
+    "text": "Salut, je cherche une info",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonjour",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonjour madame",
+    "intent": "salutation"
+  },
+  {
+    "text": "bonsoir, l’agent",
+    "intent": "salutation"
+  },
+  {
+    "text": "coucou, l’agent",
+    "intent": "salutation"
+  },
+  {
+    "text": "hey, l’agent",
+    "intent": "salutation"
+  },
+  {
+    "text": "Hey, j’aurais besoin de vos lumières",
+    "intent": "salutation"
+  },
+  {
+    "text": "Coucou, j’ai une petite question",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonsoir, une petite minute ?",
+    "intent": "salutation"
+  },
+  {
+    "text": "Bonjour, j’ai besoin d’un peu d’aide",
+    "intent": "salutation"
+  },
+  {
+    "text": "Hello, j’aurais besoin d’un coup de main",
+    "intent": "salutation"
+  },
+  {
+    "text": "Salut, j’ai une demande à vous faire",
+    "intent": "salutation"
+  },
+  {
+    "text": "Hey, comment ça va ?",
+    "intent": "salutation"
+  },
+  {
+    "text": "Salut à vous",
+    "intent": "salutation"
+  },
+  {
+    "text": "Salut",
+    "intent": "salutation"
+  },
+  {
+    "text": "je voudrais savoir mon solde sur ma carte maestro",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour comment puis je voir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonsoir, est-il possible d’avoir mon solde en détail ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, pouvez-vous me confirmer le solde actuel ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour jaimerais des informations sur le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Salut, je veux faire une vérification de mon solde bancaire.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "hallo bonjour je voudrais à savoir le solde de mon compte 71080128800",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais connaitre le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "J’ai besoin de mon solde pour préparer un virement.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais connaitre mon solde et la date de la prochaine facture merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour monsieur je voudrais savoir mon solde sur mon compte xxxx xxxx xxxx",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonsoir je voudrais savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Salut, j’ai besoin de vérifier mes fonds disponibles.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "J’ai reçu une alerte mais je ne connais pas mon solde exact.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde de compte et pourquoi ma carte est bloquée merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour quelle est ma solde sur ma carte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour pourquoi je nai pas eu de solde à payer aujourdhui",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Pouvez-vous m’indiquer si j’ai un découvert ou un solde créditeur ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir si le solde de mon compte est de 400 euros",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "je viens de recevoir lextrait de compte et jai constaté une erreur sur mon solde jai 800 euros alors que je nai pas payé mon facture de téléphone que pouvezvous me dire sur ce sujet",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je veux savoir le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Est-ce que je peux consulter le solde de mon compte maintenant ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde actuel",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais consulter mon compte et savoir le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je souhaiterais de savoir le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Pourriez-vous m’indiquer le solde de ma carte ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde à jour",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour ça va comment puisje savoir le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais connaitre mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "estce que le compte bancaire peut être ouvert pour ne men mettre pas un solde négatif",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour jaimerais connaître le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir combien de soldes je suis dette",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, combien me reste-t-il sur mon compte bancaire ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Salut, combien me reste-t-il sur ma carte ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "J’ai besoin de savoir combien il me reste sur mon compte.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je souhaiterai connaitre mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais avoir le code du solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, je veux savoir combien j’ai exactement sur mon compte.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "pourriez vous mindiquer le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour monsieur je voudrais savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour c est nicolasnje souhaite connaitre mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je suis à la recherche de mes informations de solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Pourriez-vous vérifier le solde associé à mon compte, s’il vous plaît ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais sil vous plait avoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonsoir c est monsieur diop je veux savoir mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "jai besoin de mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais avoir le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Quel est mon solde depuis la dernière opération ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, je ne retrouve pas mon solde actuel, pouvez-vous m’aider ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je veux savoir si vous pouvez me communiquer mon solde actuel",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je me demande si je peux avoir mon solde et si je peux faire une prise en charge",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "monsieur je suis client de la banque je veux savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "1jai besoin de consulter mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour jaimerais aujourdhui connaître mon solde merci davance",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais me faire une prise de solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, j’aimerais connaître le montant disponible sur mon compte.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "salut je souhaite savoir le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour lorsque je ouvre mon compte sur slibfr je peux voir que ma carte est active mais que je nai aucun solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde commercial et mon solde personal",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour pouvez vous mindiquer le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour cher je souhaite consulter mon solde merci davance",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Pourriez-vous m’envoyer un relevé contenant mon solde ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "le motif de ma demande est la consultation du solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Est-il possible d’avoir un récapitulatif de mon solde ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Je veux savoir si j’ai suffisamment sur mon compte pour une transaction.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "j veux savoir mon solde merci mecanicien",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "salut je voulais savoir si jai de la solde sur mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour le salut est il possible de toucher le solde dun compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjourje voudrais savoir le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Quel est le montant de mon solde à ce jour ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonsoir je voudrais savoir mon niveau de solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "salut je voudrais savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais aller voir ma solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je suis à la recherche dun guidage pour bien utiliser mon téléphone portable et avec un règlement de compte et un solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonsoir je voudrais savoir mon solde actuel",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour est ce que je peux avoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Pouvez-vous me transmettre le solde disponible sur mon compte ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je vous demanderais mon solde actuel",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "est ce que mon solde est en pourcentage ou en euro",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde actuel en euros",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je veux consulter mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, j’ai besoin du montant restant pour faire un paiement.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir quel est mon solde actuel",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour jaurais envie de connaitre mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "salut jaimerais connaitre mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "je voudrais savoir mon solde actuel",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour merci de me donner le solde de mon compte 12345672",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais vérifier mon solde de mon compte bancaire merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "J’aimerais avoir une mise à jour de mon solde.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voulais vérifier le solde de mon compte ese et savoir si je peux payer une facture qui a été émise par ese",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Est-ce que je peux obtenir mon solde actuel par message ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "salut ça fait longtemps que je ne lance pas mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais connaitre mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir le solde de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Je souhaiterais avoir mon solde en euros et en dinars.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, puis-je recevoir mon solde actuel par mail ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour ça va j ai un problème je ne sais pas comment consulter mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon solde actuel de mon compte",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "Bonjour, pouvez-vous m’envoyer les informations liées à mon solde ?",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonne soirée je voudrais connaitre le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "J’aimerais savoir combien j’ai sur mon compte principal.",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je vous contacte pour savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je souhaite consulter mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour ça va comment ça va ça va joliment je voudrais un mot de passe pour accéder à mon compte et quel est le solde je voudrais savoir",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrait connaitre mon solde comtant et le solde du0027achat le 17062022",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour pour savoir mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour jaimerais savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je souhaiterais de savoir mon solde en euro et en dinar",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais savoir quelle est mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "salut puisje voir mon solde et mon numéro de compte sil te plait",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour est ce que je peux avoir le solde de mon compte merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour est ce que je peux avoir mon solde en ce moment",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "je veux savoir mon solde",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour c est mr alexandre pour un motif de réclame je voudrais savoir mon solde merci",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour je voudrais connaître le solde de mon compte sil vous plaît",
+    "intent": "consult_solde"
+  },
+  {
+    "text": "bonjour peuton maide à consulter le nombre d''actions que je possède par exemple 20005153",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voulais savoir le nombre d''actions que jai sur mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je veux savoir combien d’actions j’ai achetées.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais connaitre le nombre d''actions qui me sont attribuées",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais sil vous plaît savoir combien d''actions je possède merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je suis un client dinvestissement et je voudrais savoir quel est le nombre d''actions que jai",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je souhaite consulter l’historique et le nombre d’actions acquises.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour estce que je peux avoir le nombre d''actions que je possède dans votre portefeuille",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir le nombre d''actions que jai investies",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour bonjour je voulais savoir combien sont mes actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je souhaite connaitre le nombre d''actions que jai aujourdhui merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir le nombre d''actions que jai pour mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voulais savoir si vous avez une application pour les smartphone pour me faciliter les transactions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour nje voudrais savoir le nombre d''actions que jai pour mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir mon le nombre d''actions à la bourse",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je souhaite connaître le nombre de titres enregistrés à mon actif.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais connaître mon nombre d''actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voulais savoir combien d''actions je possède aujourdhui",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir combien d''actions jai actuellement merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais une explication pour le nombre de mes actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonsoir je souhaiterais savoir le nombre d''actions que jai sous mon nom et de ma femme",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je cherche à savoir combien d’actions figurent dans mon portefeuille",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je voudrais une estimation précise du nombre d’actions que je possède.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je voudrais connaitre le nombre d''actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je souhaiterai avoir le nombre d''actions que jai dans mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je souhaite connaitre le nombre d''actions que je possède dans mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir le nombre d''actions que jai acheté",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir combien d''actions avais je",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "salut je voulais savoir combien de actions y a dans ma prime",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "salut jaimerais savoir combien d''actions jai",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonsoir madame je voudrais savoir le nombre d''actions que je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Pourriez-vous m’envoyer un état récapitulatif de mes actions ?",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "salut est ce que je peux connaitre le nombre d''actions que je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir combien d''actions je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "merci de mindiquer le nombre d''actions que je possède dans ma société",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour monsieur je voudrais savoir combien d''actions je détenais sur mon compte merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je désire consulter les détails de mes actions, notamment leur volume.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir le nombre d''actions que je possède actuellement merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Pourriez-vous me transmettre la position actuelle de mes actions ?",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je souhaite consulter le nombre d''actions merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je voudrais savoir le nombre d''actions que jai achete",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour quels sont les nombres d''actions que je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "J’aimerais un récapitulatif du nombre d’actions que je possède.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "J’aimerais vérifier combien d’actions m’ont été attribuées.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour comment puisje vérifier létat de mes transactions récentes",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "J’aimerais obtenir un relevé du nombre d’actions que je possède.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "puisje avoir les nombres d''actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je souhaite connaître la quantité exacte d’actions à mon nom.",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour jaimerais savoir combien d''actions je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais connaitre le nombre d''actions en mes mains",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour pouvezvous me dire combien d''actions je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour estce que je peux avoir le nombre de mes actions ou la valeur de ma position",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je suis un investisseur en bourse je souhaite obtenir le nombre d''actions que jai auprès de ma compagnie",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir comment jai des actions avec mon nom",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bien bonjour jaurais besoin de connaitre le nombre de actions chez bnp paribas",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais connaitre les dernières transactions que jai faites sur mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je souhaiterais savoir combien d''actions jai",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je souhaiterais consulter le détail de mes avoirs en actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais un bilan detaillé de mes actions dune société",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour ici je voudrais savoir le nombre de mes actions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je voudrais savoir le nombre d''actions que jai",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "quel est le nombre d''actions que je possède dans mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais avoir le nombre d actions pour mon compte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voulais savoir combien d''actions je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je voudrais savoir le nombre d actions que je possede aujourd hui merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir le nombre de actions que jai achetees avec le compte 14089376",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais connaitre le montant de mes dernières transactions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je souhaite avoir la consultation de mon nombre d''actions merci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "quel est le nombre d''actions que je possède",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjourbrestce que vous pouvez me dire le nombre d''actions que jai brmerci",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais connaitre le nombre d''actions que jai dans ma carte",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je voudrais savoir le nombre d''actions que je possède aujourdhui et aussi mes dividend",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Pouvez-vous me dire combien d’actions je détiens actuellement sur mon compte ?",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour quelle est la valeur de mes actions chez caisse depargne",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "je voudrais sil vous plait connaître le nombre d''actions possédées par le compte 60713847",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "bonjour je suis plutôt content de pouvoir vous contacter pour avoir un aperçu des dernières transactions",
+    "intent": "consult_actions"
+  },
+  {
+    "text": "Je souhaiterais connaître les entrées et sorties sur mon compte ce mois-ci.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Merci de me faire parvenir un extrait actualisé de mon compte portefeuille.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je souhaite consulter les mouvements effectués sur mon compte joint.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pourriez-vous m’indiquer comment télécharger un relevé via votre application mobile ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, pourriez-vous me fournir les relevés de mon livret d’épargne ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je suis en train de faire un dossier administratif, j’ai besoin de mon relevé bancaire.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pouvez-vous me faire parvenir les relevés de mon compte professionnel ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour pouvezvous me donner un extrait de mon compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’ai besoin d’un relevé des virements effectués depuis mon compte courant.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Est-ce que je peux obtenir un relevé de compte en anglais ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je cherche à obtenir une version imprimable de mon dernier extrait bancaire.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je voudrais un extrait de mon compte merci",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’aimerais recevoir automatiquement mes relevés bancaires chaque mois.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je veux avoir mon extract d compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pouvez-vous générer un relevé de toutes mes transactions du mois dernier ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, pouvez-vous me transmettre un extrait de ma carte de crédit",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Est-ce possible d’avoir une copie de mon dernier relevé de compte ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pouvez-vous me transmettre le dernier relevé disponible de mon compte ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pourriez-vous m’envoyer l’historique de mon compte pour cette année ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour jaimerais avoir lextrait de mon compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je voudrais obtenir les détails de mes dernières opérations bancaires.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je vous contacte pour obtenir une copie de mes relevés bancaires.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, je prépare une demande de crédit et il me faut un relevé bancaire récent.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, j’ai besoin d’un relevé récapitulatif annuel pour mes impôts.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, pouvez-vous m’envoyer le relevé de mon compte depuis le début de l’année ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pouvez-vous m’aider à obtenir le relevé d’un compte clôturé ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, j’aimerais récupérer un relevé complet de mon compte épargne.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je voudrais savoir si vous pouvez me donner un état de mon compte pour cette année",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’aimerais accéder à l’état de mon compte pour la période du 1er janvier au 31 mars.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "salut je voudrais savoir si je peux avoir mon état de compte en ligne",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pour des raisons personnelles, j’aimerais avoir accès à mon état de compte.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’aimerais récupérer mes relevés des trois derniers mois.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je cherche à consulter mes mouvements bancaires sur une période donnée.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, je voudrais recevoir mon relevé de compte sous format Excel si possible.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pourriez-vous générer et m’envoyer un relevé complet de mon compte ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je souhaiterais avoir lextrait de mon compte sil vous plait",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je désire avoir un historique de toutes les transactions effectuées ce trimestre.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Merci de m’indiquer la procédure pour obtenir un état de compte sans identifiants.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je souhaite recevoir une synthèse de mes dépenses hebdomadaires.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’ai besoin de mon relevé pour justifier ma situation financière.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, j’ai besoin d’un relevé mensuel de mon compte pour le mois de janvier 2022.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour jaimerait avoir lextrait de mon compte pour faire mes économies",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je voudrais un état de mon compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pourriez-vous m’indiquer comment accéder à mon état de compte en ligne ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’aimerais recevoir le relevé de mon compte avec la date et l’heure des opérations.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Pourrais-je recevoir un résumé des mouvements récents sur mon compte ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je souhaite obtenir mon relevé bancaire en urgence pour un dossier personnel.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Est-ce possible d’avoir l’état de mon compte au format papier ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je voudrais avoir un extrait de compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Est-il possible de recevoir automatiquement mon extrait de compte chaque mois par mail ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’aimerais consulter un relevé de mon compte, notamment pour les derniers mois.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je voudrais un extrait de compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, je voudrais recevoir tous les relevés manquants de cette année.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je suis un client de votre banque et je voudrais recevoir un extrait de mon compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour ça va jai besoin de mon extrait de compte jai bien enregistré votre dernier appel bonjour ça va jai besoin de mon extrait de compte jai bien enregistré votre dernier appel",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Est-il possible d’obtenir une version PDF de mon extrait de compte ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, comment puis-je demander mon relevé sans passer par mon espace client ?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je prépare un dossier bancaire, j’aurais besoin d’un relevé officiel.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, j’ai besoin de consulter mon relevé bancaire pour effectuer un suivi de mes dépenses.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "J’ai besoin d’un relevé de mes opérations pour effectuer une vérification.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je suis à la recherche d’un relevé bancaire pour le compte de ma mère.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Est-ce possible d’avoir un relevé de compte filtré uniquement sur les dépenses?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Bonjour, comment puis-je récupérer un ancien relevé de compte datant de 2021?",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je suis a la recherche dun extrait de compte pour un compte portefeuille 23411422",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour monsieur je suis à la recherche de mon extrait de compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour comment peuventje avoir un extrait de compte",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "Je voudrais accéder à mon historique bancaire pour les six derniers mois.",
+    "intent": "demande_extrait"
+  },
+  {
+    "text": "bonjour je souhaite consulter mes dernières opérations et réceptionner les dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais savoir si je peux obtenir un rapport détaillé sur mes dernières dépenses.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour comment puisje consulter les dernières opérations sur mon compte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Est-ce possible de consulter mes opérations bancaires des 30 derniers jours ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Pouvez-vous m’envoyer un relevé des dernières transactions effectuées depuis mon compte bancaire ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je souhaite obtenir un historique détaillé de mes opérations effectuées avec ma carte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais vérifier les dernières opérations sur mon compte bancaire, pouvez-vous m’aider ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, est-ce possible d’obtenir un relevé de mes dernières opérations pour cette semaine ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, je souhaite vérifier l’état de mes dernières opérations sur mon compte bancaire.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Est-ce que je peux voir un résumé des transactions récentes sur mon compte ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais vérifier la liste des opérations effectuées cette semaine sur mon compte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais recevoir un résumé des dernières opérations effectuées sur mon compte professionnel.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais savoir si je peux consulter mes dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je souhaiterais avoir les dernières opérations effectuées sur mon compte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais consulter mes dernières opérations bancaires en ligne, comment faire ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais avoir un récapitulatif des retraits effectués sur mon compte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, comment puis-je accéder aux détails de mes dernières opérations sur ma carte bancaire ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je souhaiterais savoir les dates de dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, je veux voir les dernières transactions effectuées sur mon compte bancaire.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais consulter les dernières opérations effectuées pour vérifier mes paiements.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour jaimerais savoir le montant des dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, est-il possible d’obtenir un récapitulatif de toutes mes dernières transactions ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je souhaite consulter mes dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’ai besoin de consulter les dernières opérations sur mon compte épargne.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais consulter toutes les opérations effectuées sur mon compte depuis le début de l’année.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Est-ce que je peux avoir un détail des dernières opérations effectuées sur mon compte ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Pourriez-vous me fournir un récapitulatif de mes dernières dépenses sur mon compte bancaire ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais vérifier la liste de toutes les opérations effectuées sur mon compte cette semaine.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais savoir si je peux consulter mes dernières opérations sur ma carte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais savoir si jai des opérations à faire",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais savoir si toutes mes dernières opérations sont correctement inscrites sur mon compte courant.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais connaître les transactions effectuées sur mon compte durant le mois de mars.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, je voudrais consulter les dernières transactions de mon compte courant.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais connaître les transactions de mon compte pour le mois dernier.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais connaître les dernières opérations effectuées sur mon compte depuis hier.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je veux connaitre les dernières opérations sur mon compte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais consulter l’historique complet des opérations de mon compte ces derniers mois.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je souhaiterais avoir un retour sur les dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je veux savoir les dernières opérations sur ma carte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, est-ce possible d’avoir un détail de mes dernières opérations par carte de crédit ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’ai besoin de vérifier les paiements récents effectués sur ma carte de crédit.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais savoir si vous avez eu les dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais avoir un aperçu des dernières opérations que jai effectué sur mon compte sil vous plait merci",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "salut jai une question concernant mon compte je voudrais savoir si je peux consulter mes dernières opérations merci davance pour votre aide",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais obtenir un relevé des derniers retraits effectués sur mon compte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais savoir si mes dernières opérations sont correctement enregistrées dans mon compte bancaire.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais les dernières opérations de mon compte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Est-il possible d’obtenir les informations concernant mes dernières transactions dans un format PDF ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Est-ce que je peux recevoir un récapitulatif de toutes mes dernières opérations bancaires ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour jaimerais connaitre mes dernières opérations sil vous plait",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je souhaite obtenir un récapitulatif des opérations effectuées pendant le mois dernier.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Pouvez-vous m’envoyer un aperçu des paiements effectués avec ma carte ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je souhaiterais avoir les détails des derniers retraits effectués avec ma carte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjoure je voudrais connaitre les dernières opérations du compte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais avoir les transactions récentes effectuées via ma carte de débit.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je souhaite vérifier les dernières transactions effectuées sur mon compte pour m’assurer de leur exactitude.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je voudrais vérifier les opérations récentes sur mon compte de manière détaillée.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais obtenir une copie des dernières transactions effectuées sur ma carte bancaire.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour jaimerait la liste des dernières opérations faites sur mon compte",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Pouvez-vous m’indiquer comment consulter mes opérations sur votre application bancaire ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais vérifier les derniers virements effectués depuis mon compte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je souhaite vérifier les dernières opérations effectuées sur mon compte pour préparer mon budget mensuel.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais connaître mes dernières opérations merci",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais consulter les dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "est ce que je peux avoir la réponse dune de mes opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais avoir les informations sur mes dernières opérations bancaires sur mon compte courant.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour jai besoin de connaitre la liste de mes dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je voudrais connaitre mes dernières opérations",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "J’aimerais savoir si mes dernières opérations sont correctement enregistrées sur mon compte.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, est-ce que je peux voir un récapitulatif de mes dernières opérations bancaires ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, je cherche à consulter un résumé des transactions récentes sur ma carte de crédit.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Pourriez-vous me donner la liste des dernières transactions effectuées sur mon compte ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Bonjour, j’aimerais avoir un aperçu des dernières transactions effectuées sur mon compte courant.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Je souhaite consulter les transactions effectuées avec ma carte bancaire le mois dernier.",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "Pouvez-vous m’envoyer un récapitulatif des derniers paiements effectués sur ma carte ?",
+    "intent": "consult_operations"
+  },
+  {
+    "text": "bonjour je veux savoir pourquoi jai un coupure",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour est ce que je peux avoir un nouveau carte bancaire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "ya pas de frais du tout pour savoir le montant de mes dernières factures",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si jai reçu un nouveau chèque de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir comment je peux retirer de largent en échec avec ma carte maestro",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je suis venu vous poser une question je souhaite savoir pourquoi mon rechargement de 100 na pas été effectué merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour quelle est la date de la prochaine prise de position",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si ma demande de prêt à maitrise a été accepté ou non et si je peux faire des emprunts supplémentaire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour ça va pour les comptes a la caisse de depot et placement du quebec caisse",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaite connaitre les derniers montants versés sur mon compte n77 37285 65155 848",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaite savoir si jai droit a un prêt pour la création dun site internet",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bien salut je veux savoir si jai des options demprunt",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si vous pouvez me dire combien jai de compétence en mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "coucou je désire avoir ma lettre dinformation",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais avoir un résumé de mon compte et de mes derniers tickets",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis en train de créer mon compte mais jai un problème je ne peux pas trouver le numéro de compte pour créer un compte je ne suis pas sûr de savoir où le trouver je voudrais juste sav",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonsoir jaurais besoin dun motif pour la facture 5422029",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut cest mr marc bennett je voulais savoir si la carte de credit doris soyez prêt pour le mois de mars pour un emprunt a 4200 dans un délai de 30 jours je vous remercie",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je suis actuellement à létranger je dois minscrire dans une banque ici pour pouvoir retirer de largent du compté rib 435537110134234 merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais une information sur le compte 86110809153300060000060021034418body",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je cherche mon compte dargent",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaite recuperer mes fichiers",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je suis à la recherche de ma planification",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais faire un retrait",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir ce que cest que le compte client pour la banque postale",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je veux savoir si à 20h le 0604 à 14h30 jai eu un débit de 220 euros",
+    "intent": "autre_question"
+  },
+  {
+    "text": "jai une question sur mon compte courant merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voulais savoir le montant de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour quelle consigne a suivre pour traiter un paiement caisse simple",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je veux connaitre les dernières operations effectuées sur ma carte de crédit",
+    "intent": "autre_question"
+  },
+  {
+    "text": "ou est ma carte de crédit",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis à la recherche dun numéro de compte merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais avoir une démonstration de la fraiseuse",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis un client de la banque pop et je voudrais savoir si je peut avoir un prêt à 10000",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaiterais savoir si vous avez des nouvelles de mon problème",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaurais besoin de retirer mon argent de mon compte de caisse populaire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais le numéro de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir si je peux retirer 100 euros en cash sur mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour ca est moi il etait 00000000000000000000000000000000000000000000000000000",
+    "intent": "autre_question"
+  },
+  {
+    "text": "tu mas dit que javais du recevoir une facture ce mois la mais je nai pas reçu",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaite savoir si je peux avoir ma carte de bitcoins",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour pourquoi ma facture a augmenté",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour bonjour je suis monsieur clément je veux savoir sil y a des frais darrondissement de 050 au niveau de la commande n 1022649491",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour comment ça va je voudrais savoir le montant que je dois payer pour ma facture id 03780275070415140 merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour est ce que je peux déposer 100 euros sur mon compte je suis de 20 ans et je suis un étudiant merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si la facture d hiver est déjà sortie",
+    "intent": "autre_question"
+  },
+  {
+    "text": "ouais je suis à la recherche de mon compte cest a 30897987 si vous pouvez maider",
+    "intent": "autre_question"
+  },
+  {
+    "text": "est ce que jai deja des paiements",
+    "intent": "autre_question"
+  },
+  {
+    "text": "voi la bon de command",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais faire la demande de crédit",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir si vous pouvez me donner des informations sur mes dépenses",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis un client de la banque je suis passé à 30 jours je voudrais savoir si je peux retarder le paiement de 5 jours merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonsoir jai voulu retirer un montant sur ma carte bancaire mais je nai pas pu le faire peutêtre allez vous pouvoir me donner quelques directives pour pouvoir faire ça",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour comment puis je payer mes facture",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais savoir si je peux récupérer une carte maestro",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais reçevoir un statement de compte pour le compte 1132013103",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonsoir je voudrais savoir si jai des paiements à faire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je narrive pas à payer ma facture",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrai connaitre le montant de mon compte libere",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis à la recherche de mon compte depargne lepargne ou le compte depargne le compte depargne lepargne",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voulais savoir si jai un compte ouvert chez vous",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir si je peux me faire changer de numéro de carte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour est ce que je peux avoir un rapide recap de mon dernier réglement de compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir comment je peux payer mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais la date déchéance aujourdhui de la gazprom",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrai savoir si jai des remboursements a faire sur mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour il y a une erreur sur mon compte jai besoin de votre assistance merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je me sens responsable je suis bien à laise",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis à la recherche dun agence locale bnp paribas",
+    "intent": "autre_question"
+  },
+  {
+    "text": "tu as un compte ouvert et tu voudrais savoir comment me le fermer",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voulais savoir si la facture que jai reçu est valide",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut monsieur jai besoin de savoir si de gérer ma facture",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaite savoir s il y a des operations a mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour comment jai une facture 17664324",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour bonjour je voulais savoir si ma carte économie lancée est bien active",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut je veut avoir sa facture bancaire vn",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour est ce que je peux avoir mon compte banque",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour qui est le numéro de téléphone de la banque courante",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais savoir si jai eu des débits de facture et les montants de ces factures",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si jai été ouvrir un compte courant",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je regrette davoir oublier mes codes de sécurité je voudrais les voir sil vous plaît",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je suis client de votre banque depuis 11 ans cela dit je nai pas de carte de crédit et je souhaiterai une carte de crédit qui a un limité de 8000 euros merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais vous poser des questions sur ma carte maestro",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour ça va comment vas tu",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir pourquoi je ne peux pas me connecter à mon compte je suis sûr que je me suis bien inscrit",
+    "intent": "autre_question"
+  },
+  {
+    "text": "mr le serveur je voulais savoir les derniers mouvements sur ma carte merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir sur quel compte je peux annuler mon abonnement merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si la banque offre des services pour linvestissement en bourse",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour ca moi moi moi moi moi cest bon cest bon cest bon cest bon cest bon cest bon cest bon cest bon cest bon cest bon cest bon cest bon cest",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour cest madame lambert je voudrais savoir si jai le droit de retirer de largent de mon compte à létranger merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut ça va je vais être en retard pour mon appel jeudi à 1500 merci davance",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour c est moi je suis laurent ramirez je vais minscrire en action 2020 aujourdhui merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir quand je pourrai retirer mon salaire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je vous prie de menvoyer votre code secret et votre numéro de compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais etre connecter a mon compte merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour peutêtre que tu sais comment voir les frais de services à payer le dernier mois",
+    "intent": "autre_question"
+  },
+  {
+    "text": "ouvre compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jai un compte lage de 31 ans et jai 900 euros pour le repas ce soir et je voudrais savoir si je peux avoir plus 200 euros pour le repas",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je viens davoir un avis de chq que jai déposé il y a un mois maintenant je nai rien compris en effet je veux savoir pourquoi le montant ma été remis dans un autre compte que celui que j",
+    "intent": "autre_question"
+  },
+  {
+    "text": "est ce que vous pouvez me dire les détails de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour estce que jai un dossier ouvrable pour la caisse",
+    "intent": "autre_question"
+  },
+  {
+    "text": "quand aije produit mes premieres factures",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais savoir si vous savez pourquoi jai un b14116116 sur ma facture",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si je peux retirer de largent en espèce",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir quel est mon dernier débit",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si jai été payé pour le mois de janvier",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir sil est possible dassigner la carte à un autre compté sans frais de commande",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour pourraisje avoir vos horaires douverture de votre agence bancaire la plus proche",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais savoir quel est le montant de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "hello i would like to know if i can open an account with you",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour pour ma carte de credit pourrait on me en envoyer une carte aux usa",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je ne trouve pas mon compte dans lapplication",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir si je peux modifier mon mot de passe",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour lafarge je voudrais savoir si il y a un nouveau produit pour la pose des planchers en béton",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour pour savoir si on peut échanger le numéro de cartes pour les cartes bleues",
+    "intent": "autre_question"
+  },
+  {
+    "text": "comment puis je savoir si jai passe mes impot",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je demande une bulletin de rembours",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je souhaite savoir que jai 65 euros restant sur mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais savoir si jai reçu un prêt ce matin",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si vous pouvez menvoyer mes informations de compte par email",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonsoir je voudrais savoir comment faire pour casher mon compte bancaire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je vais repondre a dix questions",
+    "intent": "autre_question"
+  },
+  {
+    "text": "avez vous une carte bancaire",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voulais savoir le montant du compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si je peux retirer 300 euros dune de mes comptes à latm",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut je veux savoir si je peux transférer 1000 euros de ma carte bancaire paypal vers une carte bancaire manlis",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais savoir la réponse à la question 35 373 825 590",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je suis à la recherche de ma facture",
+    "intent": "autre_question"
+  },
+  {
+    "text": "merci pour le service",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut je voudrais savoir si je peux obtenir mon compte numero 493594620 au plus vite",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voulais savoir si la rechage de mon compte en cours est normal ou non",
+    "intent": "autre_question"
+  },
+  {
+    "text": "salut jaimerai savoir si jai pu passer ma demande de prêt pour ma maison",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir ce que jai deduit de ma carte de crédit",
+    "intent": "autre_question"
+  },
+  {
+    "text": "la date de validité de ma cart",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour jaimerais un prêt de 5000 merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour comment puisje lancer un prélevement sur ma carte de crédit merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour monsieur je suis un client de la banque je souhaiterait savoir si il y a un compte de départ de 2 000 euros si cest possible avec le tarif libre merci nnnn",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir le montant de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si je peux payer mes factures je ne peux pas payer en temps opportun et je voudrais savoir si il y a des options pour à gérer mes paiements",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour quelle est mon credit card",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais savoir si je peux changer mon adresse postale",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je voudrais savoir combien je peux retirer en espèce sur ma carte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je voudrais un compte dépargne en dollars merci",
+    "intent": "autre_question"
+  },
+  {
+    "text": "je veux retirer les fonds de mon compte",
+    "intent": "autre_question"
+  },
+  {
+    "text": "bonjour je viens de payer ma facture mais jai beaucoup dargent sur mon compte et je veux savoir si je peux les mettre de côté",
+    "intent": "autre_question"
+  },
+  {
+    "text": "Merci beaucoup et à plus !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À très vite, bonne soirée !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À très bientôt, au revoir !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Je vous souhaite une belle journée !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À tout de suite !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "C’est toujours un plaisir, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci, à bientôt, bonne continuation !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "C’est un plaisir d’avoir parlé avec vous, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À la prochaine fois, prenez soin de vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Je vous dis à très bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Prenez soin de vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci, à tout de suite !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci pour votre temps, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci pour l’échange, à la prochaine !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci beaucoup, bonne fin de journée !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À plus tard !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Passez une bonne soirée !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Bonne fin de semaine à vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "à la prochaine",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À la prochaine fois, merci !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci, je vous dis à très bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Au plaisir de vous revoir !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À la prochaine occasion !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "à bientôt",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci pour votre aide, à la prochaine !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À la prochaine rencontre !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À plus, à la prochaine !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À bientôt et merci encore !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci encore, à la prochaine !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Je vous souhaite tout le meilleur, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À une prochaine fois !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À bientôt, merci pour votre aide !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Passez une excellente journée !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À demain !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci, et à la prochaine !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À la prochaine, prenez soin de vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Excellente journée à vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci, à la prochaine occasion !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Passez une bonne journée, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Ciao, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci pour tout, à la prochaine !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Bonne continuation !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À plus tard, prenez soin de vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci pour votre disponibilité, à bientôt !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Bonne soirée à vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À très bientôt, je vous souhaite une belle journée !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "À plus tard et merci encore !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci, à plus !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "bonne journée",
+    "intent": "goodbye"
+  },
+  {
+    "text": "Merci et à bientôt, prenez soin de vous !",
+    "intent": "goodbye"
+  },
+  {
+    "text": "ciao",
+    "intent": "goodbye"
+  }
+]
