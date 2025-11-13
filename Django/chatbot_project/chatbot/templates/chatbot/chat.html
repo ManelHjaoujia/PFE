@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load chatbot_filters %}
+{% block title %}Chatbot - Mon Assistant{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block main_content %}
+<div class="h-full flex flex-col">
+    <div class="bg-white rounded-lg shadow-lg flex-1 flex flex-col overflow-hidden border border-gray-200">
+        <div class="bg-gray-900 text-white p-4 flex items-center justify-between">
+            <div>
+                <p class="text-gray-300 text-sm">Posez-moi vos questions</p>
+            </div>
+            <div class="flex items-center">
+                <a href="{% url 'chatbot' %}?new=true" class="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors mr-2" title="Nouvelle conversation">
+                    <i class="fas fa-plus text-gray-300"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="chatbox" class="flex-1 p-4 overflow-y-auto space-y-4 bg-gray-50">
+            {% if messages %}
+                {% for message in messages %}
+                    {% if message.sender == 'user' %}
+                        <div class="chat-message flex items-start animate-fadeIn">
+                            <div class="flex-1"></div>
+                            <div class="bg-gray-800 text-white rounded-lg p-3 max-w-3/4 shadow-md">
+                                <p>{{ message.content }}</p>
+                            </div>
+                            <div class="flex-shrink-0 bg-gray-200 rounded-full p-2 ml-3 shadow-md">
+                                <i class="fas fa-user text-gray-600"></i>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="chat-message flex items-start animate-fadeIn">
+                            <div class="flex-shrink-0 bg-gray-800 rounded-full p-2 mr-3 shadow-md">
+                                <i class="fas fa-robot text-white"></i>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 max-w-3/4 shadow-sm border border-gray-200">
+                                <!-- Utilisation du filtre pour rendre les liens cliquables -->
+                                <div class="bot-message-content">{{ message.content|make_links_clickable }}</div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <div class="chat-message flex items-start">
+                    <div class="flex-shrink-0 bg-gray-800 rounded-full p-2 mr-3 shadow-md">
+                        <i class="fas fa-robot text-white"></i>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 max-w-3/4 shadow-sm border border-gray-200">
+                        <p>Bonjour ! Comment puis-je vous aider aujourd'hui ?</p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <div id="typing-indicator" class="px-4 py-2 hidden bg-gray-50">
+            <div class="flex items-start">
+                <div class="flex-shrink-0 bg-gray-800 rounded-full p-2 mr-3 shadow-md">
+                    <i class="fas fa-robot text-white"></i>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm border border-gray-200">
+                    <div class="typing-indicator flex space-x-1">
+                        <span class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
+                        <span class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
+                        <span class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 300ms"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 p-4 bg-white">
+            <form id="chat-form" class="flex">
+                {% csrf_token %}
+                <input type="text" id="message" class="flex-1 border border-gray-300 rounded-l-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all" placeholder="Écrivez votre message..." />
+                <button type="submit" class="bg-gray-800 text-white px-6 py-3 rounded-r-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all flex items-center">
+                    <i class="fas fa-paper-plane mr-2"></i>
+                    Envoyer
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Formulaire de feedback (initialement caché) -->
+<div id="feedback-form" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-4 border-t border-gray-200 transform translate-y-full transition-transform duration-300 ease-in-out">
+    <div class="container mx-auto max-w-4xl">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Comment évaluez-vous cette conversation?</h3>
+            <button id="close-feedback" class="text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <form id="satisfaction-form" method="post" action="{% url 'submit_feedback' %}">
+            {% csrf_token %}
+            <input type="hidden" name="conversation_id" value="{{ conversation.id }}">
+            <div class="mb-4">
+                <div class="flex justify-center space-x-4 text-2xl">
+                    {% for i in "12345" %}
+                    <label class="cursor-pointer">
+                        <input type="radio" name="rating" value="{{ forloop.counter }}" class="hidden peer">
+                        <span class="text-gray-300 hover:text-yellow-400 peer-checked:text-yellow-400">
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="comment" class="block text-sm font-medium text-gray-700 mb-1">Commentaire (optionnel)</label>
+                <textarea id="comment" name="comment" rows="2" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500"></textarea>
+            </div>
+            <div class="flex justify-end">
+                <button type="submit" class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    Envoyer
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Bouton pour afficher le formulaire de feedback -->
+<div id="show-feedback-button" class="fixed bottom-4 right-4 bg-gray-800 text-white rounded-full p-3 shadow-lg cursor-pointer hover:bg-gray-700 transition-colors">
+    <i class="fas fa-smile"></i>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const chatForm = document.getElementById('chat-form');
+        const messageInput = document.getElementById('message');
+        const chatbox = document.getElementById('chatbox');
+        const typingIndicator = document.getElementById('typing-indicator');
+
+        // Scroll to bottom of chat
+        function scrollToBottom() {
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        // Initial scroll to bottom
+        scrollToBottom();
+
+        // Fonction pour convertir les URLs en liens cliquables
+        function makeLinksClickable(text) {
+            // Regex pour détecter les URLs en excluant la ponctuation finale
+            const urlRegex = /(https?:\/\/[^\s<>"{}|\\^`\[\]]+?)(?=[)\].,;:!?]*(?:\s|$))/g;
+
+            // Regex pour détecter les balises <a> déjà présentes
+            const linkRegex = /<a\s+href=["']([^"']*?)["'][^>]*>([^<]*)<\/a>/g;
+
+            // Si le texte contient déjà des balises <a>, les rendre cliquables
+            if (linkRegex.test(text)) {
+                return text.replace(linkRegex, '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">$2</a>');
+            }
+
+            // Sinon, convertir les URLs simples en liens
+            return text.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">$1</a>');
+        }
+
+        chatForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const message = messageInput.value.trim();
+            if (message) {
+                // Add user message to chat
+                addMessage('user', message);
+                messageInput.value = '';
+
+                // Scroll to bottom smoothly
+                scrollToBottom();
+
+                // Show typing indicator
+                typingIndicator.classList.remove('hidden');
+
+                // Send message to server
+                fetch("", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "X-CSRFToken": getCookie('csrftoken')
+                    },
+                    body: "message=" + encodeURIComponent(message)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Hide typing indicator
+                    typingIndicator.classList.add('hidden');
+                    // Add bot response to chat (avec liens cliquables)
+                    addMessage('bot', data.response);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    typingIndicator.classList.add('hidden');
+                    addMessage('bot', 'Désolé, une erreur est survenue. Veuillez réessayer.');
+                });
+            }
+        });
+
+        function addMessage(sender, text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'chat-message flex items-start';
+
+            if (sender === 'user') {
+                messageDiv.innerHTML = `
+                    <div class="flex-1"></div>
+                    <div class="bg-gray-800 text-white rounded-lg p-3 max-w-3/4 shadow-md">
+                        <p>${escapeHtml(text)}</p>
+                    </div>
+                    <div class="flex-shrink-0 bg-gray-200 rounded-full p-2 ml-3 shadow-md">
+                        <i class="fas fa-user text-gray-600"></i>
+                    </div>
+                `;
+            } else {
+                // Pour les messages du bot, on rend les liens cliquables
+                const processedText = makeLinksClickable(text);
+                messageDiv.innerHTML = `
+                    <div class="flex-shrink-0 bg-gray-800 rounded-full p-2 mr-3 shadow-md">
+                        <i class="fas fa-robot text-white"></i>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 max-w-3/4 shadow-sm border border-gray-200">
+                        <div class="bot-message-content">${processedText}</div>
+                    </div>
+                `;
+            }
+
+            // Add animation class
+            messageDiv.classList.add('animate-fadeIn');
+            chatbox.appendChild(messageDiv);
+
+            // Scroll to bottom smoothly
+            scrollToBottom();
+        }
+
+        function escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        // Focus on input field
+        messageInput.focus();
+
+        // Gestion du formulaire de feedback
+        const feedbackForm = document.getElementById('feedback-form');
+        const showFeedbackButton = document.getElementById('show-feedback-button');
+        const closeFeedbackButton = document.getElementById('close-feedback');
+
+        // Afficher le formulaire quand on clique sur le bouton
+        showFeedbackButton.addEventListener('click', function() {
+            feedbackForm.classList.remove('translate-y-full');
+        });
+
+        // Cacher le formulaire quand on clique sur le bouton de fermeture
+        closeFeedbackButton.addEventListener('click', function() {
+            feedbackForm.classList.add('translate-y-full');
+        });
+
+        // Animation des étoiles
+        const stars = document.querySelectorAll('input[name="rating"] + span');
+        stars.forEach((star, index) => {
+            star.addEventListener('mouseover', () => {
+                for (let i = 0; i <= index; i++) {
+                    stars[i].classList.add('text-yellow-400');
+                    stars[i].classList.remove('text-gray-300');
+                }
+            });
+
+            star.addEventListener('mouseout', () => {
+                stars.forEach((s, i) => {
+                    if (!document.querySelectorAll('input[name="rating"]')[i].checked) {
+                        s.classList.remove('text-yellow-400');
+                        s.classList.add('text-gray-300');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+<style>
+    .animate-fadeIn {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-bounce {
+        animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+
+    /* Styles pour les liens dans les messages du bot */
+    .bot-message-content a {
+        color: #2563eb;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+    }
+
+    .bot-message-content a:hover {
+        color: #1d4ed8;
+    }
+
+    .bot-message-content a:visited {
+        color: #7c3aed;
+    }
+</style>
+{% endblock %}

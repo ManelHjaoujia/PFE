@@ -1,0 +1,90 @@
+{
+  "autre_question": {
+    "precision": 0.9764309764309764,
+    "recall": 0.9764309764309764,
+    "f1-score": 0.9764309764309764,
+    "support": 297,
+    "confused_with": {
+      "fournir_infos": 3,
+      "salutation": 2
+    }
+  },
+  "demande_extrait": {
+    "precision": 1.0,
+    "recall": 0.9615384615384616,
+    "f1-score": 0.9803921568627451,
+    "support": 26,
+    "confused_with": {
+      "autre_question": 1
+    }
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 6,
+    "confused_with": {
+      "salutation": 2,
+      "fournir_infos": 1
+    }
+  },
+  "consult_operations": {
+    "precision": 0.9375,
+    "recall": 1.0,
+    "f1-score": 0.967741935483871,
+    "support": 30,
+    "confused_with": {}
+  },
+  "consult_actions": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 89,
+    "confused_with": {}
+  },
+  "fournir_infos": {
+    "precision": 0.9922839506172839,
+    "recall": 1.0,
+    "f1-score": 0.9961270333075135,
+    "support": 643,
+    "confused_with": {}
+  },
+  "salutation": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 12,
+    "confused_with": {
+      "autre_question": 3,
+      "fournir_infos": 1
+    }
+  },
+  "consult_solde": {
+    "precision": 1.0,
+    "recall": 0.9844961240310077,
+    "f1-score": 0.9921875,
+    "support": 129,
+    "confused_with": {
+      "autre_question": 2
+    }
+  },
+  "accuracy": 0.9853896103896104,
+  "macro avg": {
+    "precision": 0.9466101992143658,
+    "recall": 0.8653081952500556,
+    "f1-score": 0.8849432835939716,
+    "support": 1232
+  },
+  "weighted avg": {
+    "precision": 0.9855223865640532,
+    "recall": 0.9853896103896104,
+    "f1-score": 0.9845976656328561,
+    "support": 1232
+  },
+  "micro avg": {
+    "precision": 0.9853896103896104,
+    "recall": 0.9853896103896104,
+    "f1-score": 0.9853896103896104,
+    "support": 1232
+  }
+}

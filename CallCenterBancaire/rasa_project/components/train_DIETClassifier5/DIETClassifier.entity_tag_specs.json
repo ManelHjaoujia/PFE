@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-nom_client",
+      "2": "I-nom_client",
+      "3": "L-nom_client",
+      "4": "U-nom_client",
+      "5": "B-num_compte",
+      "6": "I-num_compte",
+      "7": "L-num_compte",
+      "8": "U-num_compte",
+      "9": "B-prenom_client",
+      "10": "I-prenom_client",
+      "11": "L-prenom_client",
+      "12": "U-prenom_client",
+      "13": "B-rib",
+      "14": "I-rib",
+      "15": "L-rib",
+      "16": "U-rib",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-nom_client": 1,
+      "I-nom_client": 2,
+      "L-nom_client": 3,
+      "U-nom_client": 4,
+      "B-num_compte": 5,
+      "I-num_compte": 6,
+      "L-num_compte": 7,
+      "U-num_compte": 8,
+      "B-prenom_client": 9,
+      "I-prenom_client": 10,
+      "L-prenom_client": 11,
+      "U-prenom_client": 12,
+      "B-rib": 13,
+      "I-rib": 14,
+      "L-rib": 15,
+      "U-rib": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

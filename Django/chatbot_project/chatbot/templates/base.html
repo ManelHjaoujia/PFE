@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mon Assistant Bancaire{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="bg-gray-50 h-screen flex flex-col">
+    {% if user.is_authenticated %}
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div id="sidebar" class="bg-gray-900 text-white w-64 flex-shrink-0 transition-all duration-300 ease-in-out flex flex-col">
+            <div class="p-4 flex justify-between items-center">
+                <img
+                  src="{% static 'chatbot/images/tes.PNG' %}"
+                  alt="Logo de la société"
+                  width="100"
+                  height="20"
+                  class="object-contain"
+                />
+                <button id="collapseSidebar" class="text-white focus:outline-none transition-colors hover:text-gray-300 md:block hidden">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <nav class="mt-5">
+                <a href="{% url 'chatbot' %}" class="flex items-center px-4 py-3 transition-colors {% if active_page == 'chatbot' %}bg-black{% else %}hover:bg-gray-800{% endif %}">
+                    <i class="fas fa-comments mr-3"></i>
+                    <span class="sidebar-text">Chatbot</span>
+                </a>
+                <a href="{% url 'dashboard' %}" class="flex items-center px-4 py-3 transition-colors {% if active_page == 'dashboard' %}bg-black{% else %}hover:bg-gray-800{% endif %}">
+                    <i class="fas fa-chart-line mr-3"></i>
+                    <span class="sidebar-text">Dashboard</span>
+                </a>
+            </nav>
+            <!-- Conversation History Section -->
+            <div class="mt-8 px-4 flex flex-col flex-grow">
+                <div class="flex items-center mb-3">
+                    <i class="fas fa-history mr-2"></i>
+                    <h2 class="text-base font-medium sidebar-text">Historique conversations</h2>
+                </div>
+                <!-- Nouvelle conversation button right after the heading -->
+                <div class="mb-4">
+                    <a href="{% url 'chatbot' %}?new=true" class="flex items-center justify-center py-2 px-3 bg-gray-800 hover:bg-gray-700 rounded-md transition-colors text-sm w-full">
+                        <i class="fas fa-plus mr-2"></i>
+                        <span class="sidebar-text">Nouvelle conversation</span>
+                    </a>
+                </div>
+                <!-- Conversation history container -->
+                <div class="relative flex-grow" style="min-height: 200px;">
+                    <div class="conversation-history absolute inset-0 overflow-y-auto pr-1 force-scrollbar scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900" style="scrollbar-width: thin; scrollbar-color: #4B5563 #1F2937;">
+                        {% if conversations %}
+                            {% for conversation in conversations %}
+                                <a href="{% url 'chatbot' %}?conversation_id={{ conversation.id }}" class="block py-2 px-2 mb-2 rounded transition-colors hover:bg-gray-800 animate-fadeIn">
+                                    <div class="flex items-center justify-between">
+                                        <div class="sidebar-text truncate">
+                                            <span class="text-sm">{{ conversation.created_at|date:"d/m/Y" }}</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="sidebar-text text-xs text-gray-400 mr-2">
+                                                {{ conversation.created_at|time:"H:i" }}
+                                            </div>
+                                            <a href="{% url 'delete_conversation' conversation.id %}" onclick="event.stopPropagation(); return confirm('Êtes-vous sûr de vouloir supprimer cette conversation?');" class="text-gray-400 hover:text-red-500 transition-colors">
+                                                <i class="fas fa-trash-alt text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-text text-xs text-gray-400 truncate mt-1">
+                                        {% with first_message=conversation.messages.first %}
+                                            {% if first_message %}
+                                                {{ first_message.content|truncatechars:30 }}
+                                            {% else %}
+                                                Nouvelle conversation
+                                            {% endif %}
+                                        {% endwith %}
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        {% else %}
+                            <p class="text-sm text-gray-500 sidebar-text">Aucune conversation</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collapsed sidebar button (desktop) -->
+        <div id="expandButton" class="hidden bg-gray-900 text-white p-4 cursor-pointer transition-all duration-300 ease-in-out hover:bg-gray-800">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+        <!-- Mobile header -->
+        <div class="md:hidden bg-gray-900 text-white p-4 w-full flex items-center justify-between">
+            <h1 class="text-xl font-bold animate-fadeIn">Assistant Bancaire</h1>
+            <button id="sidebarToggle" class="text-white focus:outline-none transition-colors hover:text-gray-300">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile sidebar -->
+        <div id="mobileSidebar" class="fixed inset-0 z-40 transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
+            <div class="bg-black bg-opacity-50 absolute inset-0" id="sidebarOverlay"></div>
+            <div class="bg-gray-900 text-white w-64 h-full relative z-10 flex flex-col">
+                <div class="p-4 flex justify-between items-center">
+                    <h1 class="text-xl font-bold animate-fadeIn">Assistant Bancaire</h1>
+                    <button id="closeSidebar" class="text-white focus:outline-none transition-colors hover:text-gray-300">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <!-- Section Profil Mobile -->
+                <div class="px-4 py-3 bg-gray-800 border-b border-gray-700">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-medium text-sm">{{ user.first_name }} {{ user.last_name }}</div>
+                            <div class="text-xs text-gray-300">{{ user.get_agence_display }}</div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mt-5">
+                    <a href="{% url 'chatbot' %}" class="flex items-center px-4 py-3 transition-colors {% if active_page == 'chatbot' %}bg-black{% else %}hover:bg-gray-800{% endif %}">
+                        <i class="fas fa-comments mr-3"></i>
+                        <span>Chatbot</span>
+                    </a>
+                    <a href="{% url 'dashboard' %}" class="flex items-center px-4 py-3 transition-colors {% if active_page == 'dashboard' %}bg-black{% else %}hover:bg-gray-800{% endif %}">
+                        <i class="fas fa-chart-line mr-3"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="{% url 'auth:profile' %}" class="flex items-center px-4 py-3 transition-colors {% if active_page == 'profile' %}bg-black{% else %}hover:bg-gray-800{% endif %}">
+                        <i class="fas fa-user-circle mr-3"></i>
+                        <span>Mon Profil</span>
+                    </a>
+                    <a href="{% url 'auth:logout' %}" class="flex items-center px-4 py-3 transition-colors hover:bg-red-600">
+                        <i class="fas fa-sign-out-alt mr-3"></i>
+                        <span>Déconnexion</span>
+                    </a>
+                </nav>
+                <!-- Mobile Conversation History -->
+                <div class="mt-8 px-4 flex-grow overflow-hidden">
+                    <div class="flex items-center mb-3">
+                         <i class="fas fa-history mr-2 text-sm"></i>
+                        <h2 class="text-sm font-medium sidebar-text whitespace-nowrap">Historique</h2>
+                    </div>
+                    <!-- Nouvelle conversation button for mobile -->
+                    <div class="mb-3">
+                        <a href="{% url 'chatbot' %}?new=true" class="flex items-center justify-center py-2 px-3 bg-gray-800 hover:bg-gray-700 rounded-md transition-colors text-sm w-full">
+                            <i class="fas fa-plus mr-2"></i>
+                            <span>Nouvelle conversation</span>
+                        </a>
+                    </div>
+                    <div class="conversation-history overflow-y-auto max-h-[calc(100vh-300px)] scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900" style="scrollbar-width: thin; scrollbar-color: #4B5563 #1F2937;">
+                        {% if conversations %}
+                            {% for conversation in conversations %}
+                                <a href="{% url 'chatbot' %}?conversation_id={{ conversation.id }}" class="block py-2 px-2 mb-2 rounded transition-colors hover:bg-gray-800 animate-fadeIn">
+                                    <div class="flex items-center justify-between">
+                                        <div class="truncate">
+                                            <span class="text-sm">{{ conversation.created_at|date:"d/m/Y" }}</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="text-xs text-gray-400 mr-2">
+                                                {{ conversation.created_at|time:"H:i" }}
+                                            </div>
+                                            <a href="{% url 'delete_conversation' conversation.id %}" onclick="event.stopPropagation(); return confirm('Êtes-vous sûr de vouloir supprimer cette conversation?');" class="text-gray-400 hover:text-red-500 transition-colors">
+                                                <i class="fas fa-trash-alt text-xs"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text-xs text-gray-400 truncate mt-1">
+                                        {% with first_message=conversation.messages.first %}
+                                            {% if first_message %}
+                                                {{ first_message.content|truncatechars:30 }}
+                                            {% else %}
+                                                Nouvelle conversation
+                                            {% endif %}
+                                        {% endwith %}
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        {% else %}
+                            <p class="text-sm text-gray-500">Aucune conversation</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content avec les cartes intégrées -->
+        <div class="flex-1 flex overflow-hidden">
+            <!-- Contenu principal -->
+            <div class="flex-1 overflow-y-auto p-8 animate-fadeIn">
+                {% block main_content %}{% endblock %}
+            </div>
+
+            <!-- Colonne des cartes à droite -->
+            <div class="w-72 p-4 space-y-4 overflow-y-auto">
+                <!-- Carte Profil Utilisateur (plus longue) -->
+                <div class="bg-white shadow-lg rounded-lg p-6 animate-fadeIn transition-shadow hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-gray-900 text-lg">{{ user.first_name }} {{ user.last_name }}</h3>
+                            <p class="text-sm text-gray-600">{{ user.get_agence_display }}</p>
+                            <p class="text-xs text-gray-500 mt-1">Chef d'agence</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-600">Email:</span>
+                            <span class="font-medium text-gray-900">{{ user.email|truncatechars:25 }}</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                             <span class="text-gray-600">Clients de votre agence:</span>
+                             <!-- Utilisation du context processor au lieu de la session -->
+                             <span class="font-medium text-gray-900">{{ clients_count }}</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-600">Statut:</span>
+                            <span class="text-green-600 font-medium flex items-center">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                Actif
+                            </span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-600">Dernière connexion:</span>
+                            <span class="font-medium text-gray-900">{{ user.last_login|date:"d/m/Y H:i" }}</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-600">Membre depuis:</span>
+                            <span class="font-medium text-gray-900">{{ user.date_joined|date:"M Y" }}</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-4 space-y-2">
+                        <a href="{% url 'auth:logout' %}" class="block w-full bg-red-600 text-white text-center py-2 px-4 rounded text-sm hover:bg-red-700 transition duration-200">
+                            <i class="fas fa-sign-out-alt mr-2"></i>
+                            Se déconnecter
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Valeur Liquidative Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 animate-fadeIn transition-shadow hover:shadow-xl">
+                    <h2 class="text-xl font-semibold mb-2 text-gray-800">Valeur Liquidative</h2>
+                    <p class="text-gray-500 mb-4">Mise à jour quotidienne</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-3xl font-bold text-gray-900">{{ vl.valeur|floatformat:2 }}</div>
+                        <div class="flex items-center {% if vl.est_positive %}text-green-600{% else %}text-red-600{% endif %}">
+                            {% if vl.est_positive %}
+                                <svg class="w-5 h-5 mr-1 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                                </svg>
+                            {% else %}
+                                <svg class="w-5 h-5 mr-1 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                                </svg>
+                            {% endif %}
+                            <span class="font-semibold">{{ vl.variation|floatformat:2 }}</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t">
+                        <div class="flex justify-between text-xs text-gray-600">
+                            <span>Dernière mise à jour:</span>
+                            <span>{{ vl.date_mise_a_jour|date:"d/m/Y H:i" }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <!-- Page de connexion si non authentifié -->
+    <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
+        {% block content %}{% endblock %}
+    </div>
+    {% endif %}
+
+    <script>
+        // Mobile sidebar toggle
+        document.getElementById('sidebarToggle')?.addEventListener('click', function() {
+            document.getElementById('mobileSidebar').classList.remove('-translate-x-full');
+        });
+
+        document.getElementById('closeSidebar')?.addEventListener('click', function() {
+            document.getElementById('mobileSidebar').classList.add('-translate-x-full');
+        });
+
+        document.getElementById('sidebarOverlay')?.addEventListener('click', function() {
+            document.getElementById('mobileSidebar').classList.add('-translate-x-full');
+        });
+
+        // Desktop sidebar collapse/expand
+        const sidebar = document.getElementById('sidebar');
+        const expandButton = document.getElementById('expandButton');
+        const collapseSidebar = document.getElementById('collapseSidebar');
+        const sidebarTexts = document.querySelectorAll('.sidebar-text');
+
+        collapseSidebar?.addEventListener('click', function() {
+            sidebar.classList.add('w-16');
+            sidebar.classList.remove('w-64');
+            expandButton.classList.remove('hidden');
+            // Hide text in sidebar
+            sidebarTexts.forEach(text => {
+                text.classList.add('hidden');
+            });
+        });
+
+        expandButton?.addEventListener('click', function() {
+            sidebar.classList.remove('w-16');
+            sidebar.classList.add('w-64');
+            expandButton.classList.add('hidden');
+            // Show text in sidebar
+            sidebarTexts.forEach(text => {
+                text.classList.remove('hidden');
+            });
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,146 @@
+[
+  {
+    "text": "Hello",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "une question à laquelle je tiens fort à savoir estce que vous pouvez menvoyer un extrait de mon compte je suis curieux de voyager et je voudrais savoir si vous pouvez me donner un exemple des voyages que vous proposez",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.7859333753585815
+    }
+  },
+  {
+    "text": "bonjour je voudrais récupérer mes dernières opération",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9830152988433838
+    }
+  },
+  {
+    "text": "bonne journée",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9900503158569336
+    }
+  },
+  {
+    "text": "Bonjour l’agent",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "bonjour je voulais vérifier le solde de mon compte ese et savoir si je peux payer une facture qui a été émise par ese",
+    "intent": "consult_solde",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.8657575249671936
+    }
+  },
+  {
+    "text": "à quoi sert le code 30 05 07 23 97 02 11",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour je veux voir mes dernières opération",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.999461829662323
+    }
+  },
+  {
+    "text": "à bientôt",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.8962993621826172
+    }
+  },
+  {
+    "text": "Coucou",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Bonjour, j’ai une question",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9999616146087646
+    }
+  },
+  {
+    "text": "bonjour jai reçu un sms pour un loyer",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.8774477243423462
+    }
+  },
+  {
+    "text": "estce que le compte bancaire peut être ouvert pour ne men mettre pas un solde négatif",
+    "intent": "consult_solde",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "bonjour ça va",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.8898995518684387
+    }
+  },
+  {
+    "text": "à la prochaine",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.6805406808853149
+    }
+  },
+  {
+    "text": "hei pai sl im blocked how can unblock me",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hello i would like to know if i can open an account with you",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 0.9999996423721313
+    }
+  },
+  {
+    "text": "ciao",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  }
+]

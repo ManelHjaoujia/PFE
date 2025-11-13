@@ -1,0 +1,96 @@
+{
+  "fournir_infos": {
+    "precision": 0.9912434325744308,
+    "recall": 1.0,
+    "f1-score": 0.9956024626209323,
+    "support": 566,
+    "confused_with": {}
+  },
+  "salutation": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 12,
+    "confused_with": {
+      "autre_question": 10,
+      "fournir_infos": 1,
+      "consult_actions": 1
+    }
+  },
+  "consult_solde": {
+    "precision": 0.9767441860465116,
+    "recall": 0.984375,
+    "f1-score": 0.980544747081712,
+    "support": 128,
+    "confused_with": {
+      "autre_question": 2
+    }
+  },
+  "demande_extrait": {
+    "precision": 0.9615384615384616,
+    "recall": 0.9615384615384616,
+    "f1-score": 0.9615384615384616,
+    "support": 26,
+    "confused_with": {
+      "autre_question": 1
+    }
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 0.16666666666666666,
+    "f1-score": 0.2857142857142857,
+    "support": 6,
+    "confused_with": {
+      "autre_question": 3,
+      "fournir_infos": 1
+    }
+  },
+  "autre_question": {
+    "precision": 0.9420289855072463,
+    "recall": 0.9558823529411765,
+    "f1-score": 0.9489051094890512,
+    "support": 340,
+    "confused_with": {
+      "salutation": 4,
+      "fournir_infos": 3
+    }
+  },
+  "consult_operations": {
+    "precision": 0.9375,
+    "recall": 0.9375,
+    "f1-score": 0.9375,
+    "support": 32,
+    "confused_with": {
+      "autre_question": 2
+    }
+  },
+  "consult_actions": {
+    "precision": 0.946236559139785,
+    "recall": 0.967032967032967,
+    "f1-score": 0.9565217391304348,
+    "support": 91,
+    "confused_with": {
+      "autre_question": 2,
+      "consult_operations": 1
+    }
+  },
+  "accuracy": 0.9666944213155704,
+  "macro avg": {
+    "precision": 0.8444114531008045,
+    "recall": 0.746624431022409,
+    "f1-score": 0.7582908506968598,
+    "support": 1201
+  },
+  "weighted avg": {
+    "precision": 0.960420000503968,
+    "recall": 0.9666944213155704,
+    "f1-score": 0.9620368215414983,
+    "support": 1201
+  },
+  "micro avg": {
+    "precision": 0.9666944213155704,
+    "recall": 0.9666944213155704,
+    "f1-score": 0.9666944213155704,
+    "support": 1201
+  }
+}

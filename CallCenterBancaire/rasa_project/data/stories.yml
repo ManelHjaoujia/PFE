@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: Salutation simple
+  steps:
+    - intent: salutation
+    - action: utter_salutation
+
+- story: Consultation de solde
+  steps:
+    - intent: consult_solde
+    - action: utter_consult_solde
+    - intent: fournir_infos
+      entities:
+        - nom_client
+        - prenom_client
+        - num_compte
+    - action: action_consulter_solde
+
+- story: Consultation du nombre d’actions
+  steps:
+    - intent: consult_actions
+    - action: utter_consult_actions
+    - intent: fournir_infos
+      entities:
+        - nom_client
+        - prenom_client
+        - rib
+        - num_compte
+    - action: action_consulter_actions
+
+- story: Demande d’extrait de compte
+  steps:
+    - intent: demande_extrait
+    - action: utter_demande_extrait
+    - intent: fournir_infos
+      entities:
+        - nom_client
+        - prenom_client
+        - rib
+        - date_debut
+        - date_fin
+    - action: action_consulter_extrait
+
+- story: Consultation des dernières opérations
+  steps:
+    - intent: consult_operations
+    - action: utter_consult_operations
+    - intent: fournir_infos
+      entities:
+        - nom_client
+        - prenom_client
+        - rib
+    - action: action_consulter_operations
+
+- story: Autre question
+  steps:
+    - intent: autre_question
+    - action: utter_autre_question
+
+- story: Fin de conversation
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye

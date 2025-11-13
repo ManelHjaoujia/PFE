@@ -1,0 +1,128 @@
+[
+  {
+    "text": "Mohamed,Mohamed,20340063564",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Mohamed",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "value": "Mohamed",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "20340063564",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Najib, El Mesbahi, 22296297, 64000031361",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Najib",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 17,
+        "value": "El Mesbahi",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 29,
+        "end": 40,
+        "value": "64000031361",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9969013929367065,
+        "value": "Najib",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.993914783000946,
+        "value": "El Mesbahi",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.5460417866706848,
+        "value": "22296297",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 29,
+        "end": 40,
+        "confidence_entity": 0.9876281023025513,
+        "value": "64000031361",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "William,Wilson, 23484569386627204143",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "William",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Wilson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "23484569386627204143",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9998995065689087,
+        "value": "23484569386627204143",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

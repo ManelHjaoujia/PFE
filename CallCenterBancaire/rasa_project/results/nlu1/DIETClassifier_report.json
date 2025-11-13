@@ -1,0 +1,49 @@
+{
+  "nom_client": {
+    "precision": 1.0,
+    "recall": 0.9982174688057041,
+    "f1-score": 0.9991079393398752,
+    "support": 561,
+    "confused_with": {}
+  },
+  "rib": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 285,
+    "confused_with": {}
+  },
+  "num_compte": {
+    "precision": 0.9964539007092199,
+    "recall": 0.9964539007092199,
+    "f1-score": 0.9964539007092199,
+    "support": 282,
+    "confused_with": {}
+  },
+  "prenom_client": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 564,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9994086339444116,
+    "recall": 0.9988179669030733,
+    "f1-score": 0.9991132131244458,
+    "support": 1692
+  },
+  "macro avg": {
+    "precision": 0.999113475177305,
+    "recall": 0.998667842378731,
+    "f1-score": 0.9988904600122738,
+    "support": 1692
+  },
+  "weighted avg": {
+    "precision": 0.9994089834515366,
+    "recall": 0.9988179669030733,
+    "f1-score": 0.9991132115659987,
+    "support": 1692
+  },
+  "accuracy": 0.9996754651665946
+}

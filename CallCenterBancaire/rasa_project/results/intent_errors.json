@@ -1,0 +1,306 @@
+[
+  {
+    "text": "bonjour je voudrais faire un retrait",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "demande_extrait",
+      "confidence": 0.9124861359596252
+    }
+  },
+  {
+    "text": "hello i would like to know if i can open an account with you",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9999902248382568
+    }
+  },
+  {
+    "text": "je demande une bulletin de rembours",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.8753843903541565
+    }
+  },
+  {
+    "text": "bonjour jaimerais savoir la réponse à la question 35 373 825 590",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour je souhaite connaitre les derniers montants versés sur mon compte n77 37285 65155 848",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 0.9999991655349731
+    }
+  },
+  {
+    "text": "Bonsoir, assistant",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.5573654770851135
+    }
+  },
+  {
+    "text": "Salut, assistant virtuel",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9982619881629944
+    }
+  },
+  {
+    "text": "Bonjour, j’ai besoin du montant restant pour faire un paiement.",
+    "intent": "consult_solde",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour je voulais vérifier le solde de mon compte ese et savoir si je peux payer une facture qui a été émise par ese",
+    "intent": "consult_solde",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.997829258441925
+    }
+  },
+  {
+    "text": "salut je voudrais savoir si je peux avoir mon état de compte en ligne",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.69842529296875
+    }
+  },
+  {
+    "text": "bonjour est ce que je peux avoir mon compte banque",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.518136739730835
+    }
+  },
+  {
+    "text": "je voudrais savoir si vous pouvez me donner des informations sur mes dépenses",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.3976079523563385
+    }
+  },
+  {
+    "text": "bonjour je suis à la recherche de mon compte depargne lepargne ou le compte depargne le compte depargne lepargne",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "demande_extrait",
+      "confidence": 0.994433581829071
+    }
+  },
+  {
+    "text": "bonjour est ce que je peux avoir un rapide recap de mon dernier réglement de compte",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "demande_extrait",
+      "confidence": 0.9924518465995789
+    }
+  },
+  {
+    "text": "À tout de suite !",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9208469390869141
+    }
+  },
+  {
+    "text": "bonjour je voudrais connaitre les dernières transactions que jai faites sur mon compte",
+    "intent": "consult_actions",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9995332956314087
+    }
+  },
+  {
+    "text": "J’ai besoin d’un relevé des virements effectués depuis mon compte courant.",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.5817041397094727
+    }
+  },
+  {
+    "text": "Je souhaiterais connaître les entrées et sorties sur mon compte ce mois-ci.",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "consult_solde",
+      "confidence": 0.9248971343040466
+    }
+  },
+  {
+    "text": "Bonjour, j’aimerais connaître les transactions de mon compte pour le mois dernier.",
+    "intent": "consult_operations",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.3651263415813446
+    }
+  },
+  {
+    "text": "bonjour ca est moi il etait 00000000000000000000000000000000000000000000000000000",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 0.5498732924461365
+    }
+  },
+  {
+    "text": "je me sens responsable je suis bien à laise",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_solde",
+      "confidence": 0.5133843421936035
+    }
+  },
+  {
+    "text": "Hey, comment ça va ?",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.5282926559448242
+    }
+  },
+  {
+    "text": "Salut, j’aimerais avoir des infos",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "consult_solde",
+      "confidence": 0.532060444355011
+    }
+  },
+  {
+    "text": "Je veux savoir si j’ai suffisamment sur mon compte pour une transaction.",
+    "intent": "consult_solde",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9354986548423767
+    }
+  },
+  {
+    "text": "Je désire avoir un historique de toutes les transactions effectuées ce trimestre.",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9997919201850891
+    }
+  },
+  {
+    "text": "Je souhaite consulter les mouvements effectués sur mon compte joint.",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9999988079071045
+    }
+  },
+  {
+    "text": "bonjour je voudrais vous poser des questions sur ma carte maestro",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9982956051826477
+    }
+  },
+  {
+    "text": "coucou je désire avoir ma lettre dinformation",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9962743520736694
+    }
+  },
+  {
+    "text": "Bonsoir, je peux vous poser une question ?",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9997310042381287
+    }
+  },
+  {
+    "text": "Bonjour, je me permets de vous contacter",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9915789365768433
+    }
+  },
+  {
+    "text": "Bonjour, est-ce que je peux vous poser une question ?",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9999837875366211
+    }
+  },
+  {
+    "text": "bonjour comment puisje vérifier létat de mes transactions récentes",
+    "intent": "consult_actions",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9982883334159851
+    }
+  },
+  {
+    "text": "bonjour je voudrais connaitre le montant de mes dernières transactions",
+    "intent": "consult_actions",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9961259961128235
+    }
+  },
+  {
+    "text": "Je souhaite recevoir une synthèse de mes dépenses hebdomadaires.",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.6171208024024963
+    }
+  },
+  {
+    "text": "bonjour quelle consigne a suivre pour traiter un paiement caisse simple",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "demande_extrait",
+      "confidence": 0.9679175019264221
+    }
+  },
+  {
+    "text": "bonjour quelle est la date de la prochaine prise de position",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9982241988182068
+    }
+  },
+  {
+    "text": "bonjour ça va comment vas tu",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9999996423721313
+    }
+  },
+  {
+    "text": "bonjour je voudrais avoir un résumé de mon compte et de mes derniers tickets",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_operations",
+      "confidence": 0.9999490976333618
+    }
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "text": "salut",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9995943903923035
+    }
+  }
+]

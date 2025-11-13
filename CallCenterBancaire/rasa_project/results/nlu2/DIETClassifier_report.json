@@ -1,0 +1,51 @@
+{
+  "prenom_client": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 641,
+    "confused_with": {}
+  },
+  "nom_client": {
+    "precision": 1.0,
+    "recall": 0.9986091794158554,
+    "f1-score": 0.9993041057759221,
+    "support": 719,
+    "confused_with": {}
+  },
+  "rib": {
+    "precision": 1.0,
+    "recall": 0.9968847352024922,
+    "f1-score": 0.9984399375975038,
+    "support": 321,
+    "confused_with": {
+      "num_compte": 1
+    }
+  },
+  "num_compte": {
+    "precision": 0.9969040247678018,
+    "recall": 0.9969040247678018,
+    "f1-score": 0.9969040247678018,
+    "support": 323,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9995004995004995,
+    "recall": 0.9985029940119761,
+    "f1-score": 0.9990014977533699,
+    "support": 2004
+  },
+  "macro avg": {
+    "precision": 0.9992260061919505,
+    "recall": 0.9980994848465373,
+    "f1-score": 0.998662017035307,
+    "support": 2004
+  },
+  "weighted avg": {
+    "precision": 0.9995009980039921,
+    "recall": 0.9985029940119761,
+    "f1-score": 0.9990014331445543,
+    "support": 2004
+  },
+  "accuracy": 0.9996860611134366
+}

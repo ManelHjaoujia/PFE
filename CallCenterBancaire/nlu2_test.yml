@@ -1,0 +1,661 @@
+version: '3.1'
+
+nlu:
+- intent: salutation
+  examples: |
+     
+    - Bonjour tout simplement
+    - Salut le robot
+    - Bien le bonjour
+    - Bonjour l’agent
+    - Hey hey
+    - Coucou, assistant
+    - Yoo
+    - Hello, c’est moi
+    - Coucou toi
+    - Bonjour, système intelligent
+    - Bonjour cher assistant
+    - Bonjour, j’ai une question
+    - Bonjour, j’aimerais en savoir plus
+    - Hello
+    - Hey, j’aurais besoin de vos lumières
+    - Salut, je cherche une info
+    - Bonjour, j’ai besoin d’un peu d’aide
+    - Hello cher bot
+    - Salut salut
+
+- intent: consult_solde
+  examples: '- Bonsoir, est-il possible d’avoir mon solde en détail ?
+
+    - bonjourje voudrais savoir le solde de mon compte
+
+    - bonjour est ce que je peux avoir mon solde en ce moment
+
+    - bonjour je suis à la recherche de mon solde merci
+
+    - salut hello comment faire pour savoir mon solde je ne peux pas la trouver sur
+    mon espace client
+
+    - salut je voulais savoir si jai de la solde sur mon compte
+
+    - bonjour je souhaiterai connaitre mon solde merci
+
+    - bonjour je voudrais vérifier mon solde merci
+
+    - Bonjour, j’ai besoin du montant restant pour faire un paiement.
+
+    - Est-ce que je peux consulter le solde de mon compte maintenant ?
+
+    - Bonjour, puis-je recevoir mon solde actuel par mail ?
+
+    - J’ai un doute sur mon solde, pouvez-vous le vérifier ?
+
+    - Bonjour, pouvez-vous me confirmer le solde actuel ?
+
+    - bonjour je voudrais savoir mon solde compte
+
+    - bonjour je suis à la recherche de mes informations de solde
+
+    - bonjour c est mr alexandre pour un motif de réclame je voudrais savoir mon solde
+    merci
+
+    - salut puisje voir mon solde et mon numéro de compte sil te plait
+
+    - je voulais savoir mon solde
+
+    - Bonjour, je souhaiterais connaître le solde restant après mes dépenses.
+
+    - bonjour comment je peux savoir le montant de mon solde
+
+    - bonjour je voudrais sil vous plait avoir mon solde
+
+    - bonsoir je voudrais savoir mon niveau de solde merci
+
+    - bonjour je souhaite consulter mon solde
+
+    - bonjour je veux savoir mon solde
+
+    - bonjour je voudrais connaitre mon solde merci
+
+    - je viens de recevoir lextrait de compte et jai constaté une erreur sur mon solde
+    jai 800 euros alors que je nai pas payé mon facture de téléphone que pouvezvous
+    me dire sur ce sujet
+
+    - bonjour je voudrais connaitre le solde de mon compte pour le mois de fevrier
+    merci
+
+    - Pourriez-vous m’indiquer le solde de ma carte ?
+
+    - Quel est mon solde depuis la dernière opération ?
+
+    - bonjour je souhaiterais de savoir le solde de mon compte
+
+    - bonjour je voudrais savoir mon solde
+
+    - bonjour je voudrais savoir combien de soldes je suis dette
+
+    - Salut, combien me reste-t-il sur ma carte ?
+
+    - bonjour je voudrais le solde de mon compte
+
+    - bonne soirée je voudrais connaitre le solde de mon compte merci
+
+    - J’aimerais avoir une mise à jour de mon solde.
+
+    - bonjour je voudrais savoir mon solde commercial et mon solde personal
+
+    - bonjour je voudrais savoir le solde du compte
+
+    - bonjour pourraisje savoir le solde de mon compte
+
+    - J’ai reçu une alerte mais je ne connais pas mon solde exact.
+
+    - bonjour comment puis je voir mon solde
+
+    - salut je souhaite savoir le solde de mon compte
+
+    - Je cherche à savoir si j’ai des fonds disponibles.
+
+    - salut ça fait longtemps que je ne lance pas mon solde
+
+    - je voudrais savoir mon solde actuel
+
+    - Bonjour, combien me reste-t-il sur mon compte bancaire ?
+
+    - bonjour je souhaite consulter le solde de mon compte
+
+    - bonsoir je voudrais savoir mon solde actuel
+
+    - bonjour je voudrais connaitre mon solde et la date de la prochaine facture merci
+
+    - bonjour je voudrais savoir mon solde sur mon compte merci
+
+    - Salut, j’ai besoin de vérifier mes fonds disponibles.'
+- intent: consult_actions
+  examples: '- bonjour je voudrais savoir combien d''actions avais je
+
+    - bonjour je voudrais savoir comment jai des actions avec mon nom
+
+    - salut bonjour jai besoin de connaitre le nombre d''actions que je possède
+
+    - bonjour je souhaiterais savoir combien d''actions jai
+
+    - Pourriez-vous m’envoyer un état récapitulatif de mes actions ?
+
+    - bonjour je voudrais savoir combien d''actions je possède aujourdhui
+
+    - bonjour nje voudrais savoir le nombre d''actions que jai pour mon compte
+
+    - J’aimerais un récapitulatif du nombre d’actions que je possède.
+
+    - je voudrais connaitre le nombre d''actions
+
+    - bonjour je voulais savoir le nombre d''actions que jai sur mon compte
+
+    - bonjour je voudrais connaître le nombre de transactions de mon compte bancaire
+    aujourdhui
+
+    - bonjour je voudrais savoir mon nombre d''actions pour le compte numéro 32587409738
+
+    - bonjour je voudrais savoir mon le nombre d''actions à la bourse
+
+    - bonjour je voudrais une explication pour le nombre de mes actions
+
+    - bonjour je voudrais connaitre le nombre d''actions qui me sont attribuées
+
+    - Est-il possible de m’indiquer le total de mes actions en portefeuille ?
+
+    - quel est le nombre d''actions que je possède
+
+    - bonjour je voudrais sil vous plaît savoir combien d''actions je possède merci
+
+    - Je souhaite connaître la quantité exacte d’actions à mon nom.
+
+    - Je désire consulter les détails de mes actions, notamment leur volume.
+
+    - bonjour je voudrais savoir combien d''actions jai actuellement merci
+
+    - Pouvez-vous me dire combien d’actions je détiens actuellement sur mon compte
+    ?
+
+    - bonjour pour moi je cherche juste le nbre d action
+
+    - bonjour je voudrais connaitre le nombre d''actions que jai dans ma carte
+
+    - bonjour estce que je peux avoir le nombre de mes actions ou la valeur de ma
+    position
+
+    - je voudrais savoir le nombre d actions que je possede aujourd hui merci
+
+    - bonsoir je souhaiterais savoir le nombre d''actions que jai sous mon nom et
+    de ma femme
+
+    - jaurais linteret de savoir le nombre d''actions que jai dans ma carte bancaire
+
+    - bonjour bonjour je voulais savoir combien sont mes actions
+
+    - bonjour monsieur je voudrais savoir combien d''actions je détenais sur mon compte
+    merci
+
+    - bonjour je voudrais consulter mon nombre d''actions
+
+    - bonsoir je suis ici pour connaitre le nombre d''actions que jai de ma société
+
+    - Je désire connaître le nombre total de mes titres en bourse.'
+- intent: demande_extrait
+  examples: '- Pouvez-vous m’aider à obtenir le relevé d’un compte clôturé ?
+
+    - Bonjour, pouvez-vous me transmettre un extrait de ma carte de crédit
+
+    - Est-ce que je peux obtenir un relevé de compte en anglais ?
+
+    - Bonjour, je voudrais recevoir tous les relevés manquants de cette année.
+
+    - Je souhaite un extrait de mon compte incluant les opérations par carte bancaire.
+
+    - Bonjour, j’aimerais récupérer un relevé complet de mon compte épargne.
+
+    - Merci de me faire parvenir un extrait actualisé de mon compte portefeuille.
+
+    - Pour des raisons personnelles, j’aimerais avoir accès à mon extrait de compte.
+
+    - Je désire recevoir un extrait pour préparer mes économies.
+
+    - Bonjour, j’ai besoin d’un relevé récapitulatif annuel pour mes impôts.
+
+    - salut jai besoin dun extrait de compte mais je ne suis pas capable de midentifier
+    comment puisje obtenir un extrait de compte
+
+    - Bonjour, je prépare une demande de crédit et il me faut un relevé bancaire récent.
+
+    - Est-il possible de recevoir automatiquement mon extrait de compte chaque mois
+    par mail ?
+
+    - Bonjour, j’ai besoin d’un relevé mensuel de mon compte pour le mois de janvier
+    2022.
+
+    - Bonjour, j’ai besoin de consulter mon relevé bancaire pour effectuer un suivi
+    de mes dépenses.
+
+    - Je souhaiterais obtenir un duplicata de mon relevé de compte.
+
+    - bonjour je suis client de la banque bni suite a votre sms je voudrais avoir
+    un extrait de ma carte de credit
+
+    - Je cherche à obtenir une version imprimable de mon dernier extrait bancaire.
+
+    - J’aimerais recevoir le relevé de mon compte avec la date et l’heure des opérations.
+
+    - Bonjour, comment puis-je récupérer un ancien relevé de compte datant de 2021
+    ?
+
+    - Pour un contrôle fiscal, il me faut tous les extraits de l’année dernière.
+
+    - Je cherche à consulter mes mouvements bancaires sur une période donnée.
+
+    - bonjour comment peuventje avoir un extrait de compte
+
+    - bonjour je voudrais un extrait de mon compte
+
+    - bonjour jaimerais avoir lextrait de mon compte
+
+    - Je souhaite consulter les mouvements effectués sur mon compte joint.
+
+    - une question à laquelle je tiens fort à savoir estce que vous pouvez menvoyer
+    un extrait de mon compte je suis curieux de voyager et je voudrais savoir si vous
+    pouvez me donner un exemple des voyages que vous proposez
+
+    - Est-il possible d’obtenir une version PDF de mon extrait de compte ?
+
+    - Je prépare un dossier bancaire, j’aurais besoin d’un relevé officiel.'
+- intent: consult_operations
+  examples: '- Bonjour, j’aimerais connaître les opérations effectuées sur mon compte
+    durant la semaine passée.
+
+    - Je voudrais vérifier la liste de toutes les opérations effectuées sur mon compte
+    cette semaine.
+
+    - Pourriez-vous m’envoyer un récapitulatif des opérations récentes sur mon compte
+    bancaire ?
+
+    - J’aimerais consulter les opérations de mon compte courant sur les 7 derniers
+    jours.
+
+    - Pourriez-vous me fournir un récapitulatif de mes dernières dépenses sur mon
+    compte bancaire ?
+
+    - Je souhaite obtenir un historique détaillé de mes opérations effectuées avec
+    ma carte.
+
+    - bonsoir jaimerais savoir comment je peux consulter mes dernières opérations
+
+    - J’aimerais savoir si mes dernières opérations sont correctement enregistrées
+    sur mon compte.
+
+    - Je souhaite vérifier les dernières opérations effectuées sur mon compte pour
+    préparer mon budget mensuel.
+
+    - Est-ce possible de consulter les dernières opérations de mon compte en ligne
+    ?
+
+    - bonjour je voudrais consulter les dernières opérations
+
+    - bonjour je souhaite consulter mes dernières opérations
+
+    - Bonjour, je voudrais consulter les dernières transactions de mon compte courant.
+
+    - Pouvez-vous m’indiquer comment consulter mes opérations sur votre application
+    bancaire ?
+
+    - Est-ce possible d’obtenir un rapport détaillé de mes dernières opérations ?
+
+    - Pouvez-vous m’envoyer un relevé des dernières transactions effectuées depuis
+    mon compte bancaire ?
+
+    - Bonjour, j’aimerais connaître les dernières opérations effectuées sur mon compte
+    depuis hier.
+
+    - J’aimerais vérifier les dernières opérations sur mon compte bancaire, pouvez-vous
+    m’aider ?
+
+    - bonjour je voudrais savoir si je peux télécharger mes dernières opérations sur
+    mon compte
+
+    - bonjour je voudrais savoir si jai des opérations à faire
+
+    - Je voudrais connaître les transactions effectuées sur mon compte durant le mois
+    de mars.
+
+    - bonjour comment puisje consulter les dernières opérations sur mon compte
+
+    - Je voudrais savoir si mes dernières opérations sont correctement enregistrées
+    dans mon compte bancaire.
+
+    - J’aimerais avoir les informations sur mes dernières opérations bancaires sur
+    mon compte courant.
+
+    - Bonjour, j’aimerais avoir un aperçu des dernières transactions effectuées sur
+    mon compte courant.
+
+    - bonjour je voudrais connaitre mes dernières opérations
+
+    - Est-ce que je peux recevoir un récapitulatif de toutes mes dernières opérations
+    bancaires ?
+
+    - bonjour je voudrais les dernières opérations de mon compte
+
+    - Je voudrais avoir un aperçu des dernières opérations effectuées avec mon compte
+    épargne.
+
+    - Bonjour, est-il possible d’obtenir un récapitulatif de toutes mes dernières
+    transactions ?
+
+    - J’aimerais savoir si toutes mes dernières opérations sont correctement inscrites
+    sur mon compte courant.
+
+    - Bonjour, je cherche à consulter un résumé des transactions récentes sur ma carte
+    de crédit.
+
+    - Est-il possible d’obtenir une copie de mes dernières transactions sous forme
+    de fichier ?'
+- intent: autre_question
+  examples: '- bonjour je voulais savoir le montant du compte
+
+    - salut je veux savoir si je peux transférer 1000 euros de ma carte bancaire paypal
+    vers une carte bancaire manlis
+
+    - mr le serveur je voulais savoir les derniers mouvements sur ma carte merci
+
+    - bonjour je veux savoir quand est la date de la prochaine operation sur mon compte
+    merci
+
+    - salut monsieur jai besoin de savoir si de gérer ma facture
+
+    - bonjour je veux savoir si à 20h le 0604 à 14h30 jai eu un débit de 220 euros
+
+    - bonjour jaimerais savoir si vous savez pourquoi jai un b14116116 sur ma facture
+
+    - bonjour je souhaite savoir le dernier paiement éffectué
+
+    - bonjour je voudrais faire un retrait
+
+    - mon compte  de la banque lagence questce que ca coute
+
+    - bonjour je voudrais avoir un résumé de mon compte et de mes derniers tickets
+
+    - bonjour je voudrais savoir comment je peux retirer de largent en échec avec
+    ma carte maestro
+
+    - bonjour je narrive pas à payer ma facture
+
+    - bonjour je voudrais avoir le compte courant 1097089000 a porto ricco
+
+    - bonjour je suis à la recherche de ma facture
+
+    - je suis venu vous poser une question je souhaite savoir pourquoi mon rechargement
+    de 100 na pas été effectué merci
+
+    - je tinforme que mon compte a été bloqué avezvous oublié votre mot de passe
+
+    - je voudrai savoir si jai des remboursements a faire sur mon compte
+
+    - bonsoir ca fait quun moment que je suis client de votre banque je viens de recevoir
+    4 virements bancaires en un temps pour 5000 4000 4000 et 300
+
+    - bonjour je souhaite recuperer mes fichiers
+
+    - bonjour lafarge je voudrais savoir si il y a un nouveau produit pour la pose
+    des planchers en béton
+
+    - bonjour je suis à la recherche dun agence locale bnp paribas
+
+    - bonjour jaimerais savoir la réponse à la question 35 373 825 590
+
+    - bonjour comment ça va je voudrais savoir le montant que je dois payer pour ma
+    facture id 03780275070415140 merci
+
+    - je suis en retard pour le paiement de mon echeance il y a un mois
+
+    - bonjour je voudrais la date déchéance aujourdhui de la gazprom
+
+    - quelle est la date de mon dernier versement
+
+    - bonjour jaimerais savoir quel est le montant de mon compte
+
+    - ouvre compte
+
+    - bonjour je vous prie de menvoyer votre code secret et votre numéro de compte
+
+    - bonjour je voudrais savoir si jai reçu un nouveau chèque de mon compte
+
+    - bonjour est ce que je peux avoir un rapide recap de mon dernier réglement de
+    compte
+
+    - bonjour je voudrais savoir si je peux retirer 300 euros dune de mes comptes
+    à latm
+
+    - bonjour ca est moi il etait 00000000000000000000000000000000000000000000000000000
+
+    - je suis à la recherche de ma planification
+
+    - bonjour je voudrais savoir si jai été payé pour le mois de janvier
+
+    - bonjour peutêtre que je peux vous aider
+
+    - bonjour pour savoir si on peut échanger le numéro de cartes pour les cartes
+    bleues
+
+    - bonjour je voulais savoir ce que je peux faire si jai perdu mon compte merci
+
+    - bonjour je souhaite connaitre les derniers montants versés sur mon compte n77
+    37285 65155 848
+
+    - bonjour jaimerais savoir si je peux retirer de largent de mon compte bancaire
+
+    - bonjour je veux voir mes dernières opération
+
+    - comment puis je savoir si jai passe mes impot
+
+    - je voudrais savoir si je peux retirer 100 euros en cash sur mon compte
+
+    - bonjour je voudrais savoir si jai la possibilité de transférer mon compte vers
+    une banque à létranger merci pour votre aide
+
+    - bonjour est ce que je peux avoir un nouveau carte bancaire
+
+    - est ce que vous pouvez me dire les détails de mon compte
+
+    - tu as un compte ouvert et tu voudrais savoir comment me le fermer
+
+    - bonjour je souhaite savoir si jai droit a un prêt pour la création dun site
+    internet
+
+    - je viens davoir un avis de chq que jai déposé il y a un mois maintenant je nai
+    rien compris en effet je veux savoir pourquoi le montant ma été remis dans un
+    autre compte que celui que j
+
+    - bonjourparquelocationpourvotre comptebancaire
+
+    - bonjour je veux savoir si ma carte est valide
+
+    - le compte depargne
+
+    - salut je veut avoir sa facture bancaire vn
+
+    - je voudrais savoir si je peux me faire changer de numéro de carte
+
+    - bonjour je voudrais vous poser des questions sur ma carte maestro
+
+    - bonjour cest madame lambert je voudrais savoir si jai le droit de retirer de
+    largent de mon compte à létranger merci
+
+    - bonjour comment ca marche le caisse
+
+    - je demande une bulletin de rembours
+
+    - bonsoir je voudrais savoir si jai des paiements à faire
+
+    - bonjour je veux savoir combien daction je possede en ce momen
+
+    - bonjour je cherche mon compte dargent
+
+    - bonjour je voudrais savoir si je peux changer mon adresse postale'
+- intent: fournir_infos
+  examples: |
+    - [Bethany](nom_client), [Brown](prenom_client), [09930982721769746925](rib), du [2017-09-06](date_debut) au [2020-03-12](date_fin)
+    - [Heather](nom_client), [Bailey](prenom_client), [95751986871419596539](rib), du [2023-04-27](date_debut) au [2025-09-26](date_fin)
+    - [Ann](nom_client), [Williams](prenom_client), [97454722817982879039](rib), du [14/07/2014](date_debut) au [10/08/2024](date_fin)
+    - [ben abou](nom_client), [Youssef](prenom_client), [95590247184152815037](rib), du [06/09/2018](date_debut) au [22/10/2020](date_fin)
+    - Le client [Maillot ](nom_client) [aDvid](prenom_client) possède le, cmopte [94710649249](num_compte) et le RIB  [81453990827539182169](rib) du [2022-06-05](date_debut) au [0224-01-30.](date_fin)''
+    - [baker](nom_client), [thomas](prenom_client), [47953430560](num_compte), du [2021-05-09](date_debut) au [2022-03-31](date_fin)
+    - [stevens](nom_client), [tanya](prenom_client), [41106857684](num_compte), du [2019-09-03](date_debut) au [2020-10-22](date_fin)
+    - [Cheryl](nom_client), [Walsh](prenom_client), [01438152066685233900](rib), du [2023-11-09](date_debut) au [2024-05-31](date_fin)
+    - [edwards](nom_client), [darlene](prenom_client), [33727550015](num_compte), du [2015-03-27](date_debut) au [2023-06-16](date_fin)
+    - Le client! [ Rdorigues](nom_client) [nAdrée](prenom_client) possède  le compet [24774427819;](num_compte) et le  IRB [ 15287655590697149234](rib)  du [2018-07-03](date_debut) au [2023-11-24.](date_fin)
+    - [MILLER](nom_client), [KIMBERLY](prenom_client), [14134182637](num_compte), du [2014-06-15](date_debut) au [2022-05-27](date_fin)
+    - [Alyssa](nom_client), [Wilson](prenom_client), [33701391490047894471](rib), du [23/09/2020](date_debut) au [13/01/2023](date_fin)
+    - [Christina](nom_client), [Clayton](prenom_client), [90472855548](num_compte), du [07/07/2014](date_debut) au [30/04/2017](date_fin)
+    - [Joestte](prenom_client) [ Chevalier,](nom_client) numéro  de compet: [53119775438,.](num_compte) RIB: [23611548379185925982,](rib) période: [2018-06-01](date_debut) à  [2023-07-12.](date_fin)
+    - Le client [Petitjean ](nom_client) [Henri](prenom_client) possède  le compte [95216228511](num_compte) et le RBI [54692987587022485255](rib) du! [2071-02-02](date_debut) au [2023-1-026.](date_fin)
+    - [Wesley](nom_client), [Smith](prenom_client), [12747270733245843201](rib), du [2020-09-16](date_debut) au [2024-08-02](date_fin)
+    - [Valerie](nom_client), [Davis](prenom_client), [57645440856620563226](rib), du [2018-10-24](date_debut) au [2022-09-08](date_fin)
+    - [Anraude](prenom_client) [ Camus,](nom_client) numéro de copmte: [5067455383,5](num_compte)  RIB: [84238664603706189347,](rib) péroide: [2022-07-28.](date_debut)  à [2024-03-10.](date_fin)
+    - Compet [14630063253](num_compte)  (RIB [ 39715827277649250387)](rib) ouvret par [Andrée](prenom_client) [Clément ](nom_client) du [ 2016-09-15;](date_debut) au [2024-03-25.](date_fin)
+    - [Ben Driss](nom_client), [Lina](prenom_client), [86041316562347096541](rib), du [2018-03-27](date_debut) au [2025-03-29](date_fin)
+    - [JOHNSON](nom_client), [EILEEN](prenom_client), [98810374063](num_compte), du [2020-06-22](date_debut) au [2021-03-04](date_fin)
+    - [Berthelot, ](nom_client) [Joséhpine,](prenom_client) [51148214105,](num_compte) [06700735797516589268,!](rib) du [2081-04-30](date_debut) au [2024-07-08.](date_fin)
+    - [Angelica](nom_client), [Lloyd](prenom_client), [41915254563417495092](rib), du [2014-10-07](date_debut) au [2017-08-13](date_fin)
+    - [ben abou](nom_client), [Dhia](prenom_client), [69890989655](num_compte), du [2016-04-03](date_debut) au [2022-08-26](date_fin)
+    - [hines](nom_client), [elijah](prenom_client), [28133511177](num_compte), du [2021-01-17](date_debut) au [2024-09-20](date_fin)
+    - [ Nath](prenom_client) possède le copmte numéro  [46806413792](num_compte) (RIB: [ 35733101571007089785)](rib) deupis [2018-02-16](date_debut) jusqu''''à [0224-01-31.](date_fin)
+    - Le client, [Martinez](nom_client) [Élodie](prenom_client) possède le compte  [45036942024](num_compte) et le  RIB [19898468323458080582](rib) du [2020-01-31](date_debut) au [2025-02-02.](date_fin)
+    - [FIELDS](nom_client), [BRIANA](prenom_client), [99966790649](num_compte), du [2015-07-04](date_debut) au [2019-06-22](date_fin)
+    - [HARPER](nom_client), [JONNY](prenom_client), [25471555146](num_compte), du [2018-11-18](date_debut) au [2019-09-30](date_fin)
+    - [john](nom_client), [chavez](prenom_client), [55348595483](num_compte), du [2015-05-26](date_debut) au [2016-04-26](date_fin)
+    - [Cynthia](nom_client), [Andrews](prenom_client), [80371550041435362186](rib), du [2023-09-01](date_debut) au [2025-10-27](date_fin)
+    - [Henriette,](prenom_client) possède le comtpe numéor [46936700424](num_compte) (RIB:  [54049084989781527945)](rib) depuis [2018-12-25](date_debut) jusqu''''à [2024-05-12.](date_fin)
+    - [BEN AMEUR](nom_client), [Tarek](prenom_client), [65553680734394554808](rib), du [2018-05-19](date_debut) au [2020-02-25](date_fin)
+    - [Ben Nasr](nom_client), [Houssem](prenom_client), [11818226645](num_compte), du [2018-06-18](date_debut) au [2021-05-22](date_fin)
+    - [Andrew](nom_client), [Willis](prenom_client), [25475903700305033625](rib), du [2015-05-26](date_debut) au [2025-04-14](date_fin)
+    - [bell](nom_client), [janet](prenom_client), [45611232052](num_compte), du [2014-06-24](date_debut) au [2023-01-07](date_fin)
+    - [Thomas](nom_client), [Newton](prenom_client), [73878435495591523463](rib), du [2022-11-07](date_debut) au [2023-06-02](date_fin)
+    - [DAVIS](nom_client), [STEVEN](prenom_client), [74711092370](num_compte), du [2014-01-17](date_debut) au [2022-04-26](date_fin)
+    - [Lisa](nom_client), [Walker](prenom_client), [39977262811194688789](rib), du [2014-03-24](date_debut) au [2017-11-20](date_fin)
+    - [Nathan](nom_client), [Anderson](prenom_client), [50428550206](num_compte), du [2019-07-20](date_debut) au [2024-02-07](date_fin)
+    - [Randall](nom_client), [Garza II](prenom_client), [61520565865](num_compte), du [2014-11-24](date_debut) au [2025-03-27](date_fin)
+    - [Walter](nom_client), [Hall](prenom_client), [42698343594](num_compte), du [16/11/2020](date_debut) au [23/04/2023](date_fin)
+    - [ Julie](prenom_client) possède le compte  nuémro [49576530958](num_compte) (RI:B [45921058512222072381)](rib) dpeuis? [2019-04-11](date_debut) jusqu''''à [2024-01-19.](date_fin)
+    - Le clietn [Faure](nom_client) [Thibautl](prenom_client) possède le compte [51420527153](num_compte) et le RIB [88190071270558497607 ;](rib) du [2020-11-24](date_debut)  au [2024-06-21.](date_fin)
+    - [Dylan](nom_client), [Huffman](prenom_client), [56597804835801186767](rib), du [2017-10-21](date_debut) au [2020-08-30](date_fin)
+    - [Tyler](nom_client), [Young](prenom_client), [05825792468575923666](rib), du [2021-02-21](date_debut) au [2022-08-29](date_fin)
+    - [Ben Salah](nom_client), [Leila](prenom_client), [40118603609137419856](rib), du [2015-12-10](date_debut) au [2016-08-29](date_fin)
+    - [Colette](prenom_client) possède le; compte  unméro, [76682666590](num_compte)  (IRB: [26668183352598608853)](rib) depuis [2018-08-07](date_debut) jusqu''''à? [2024-05-02.](date_fin)
+    - [ Prévos,t](nom_client) [Aimé,](prenom_client) [75505690998,](num_compte) [02077553666335998422,](rib) du [2015-07-30](date_debut) au  [2024-06-81.](date_fin)
+    - Le client [Perrte](nom_client) [Claudien](prenom_client) possède le , comtpe [72079800121](num_compte)  et le  RIB [67007814976442313251:](rib) du [2019-04-01](date_debut) au [2024-06-22.](date_fin)
+    - [Ben Youssef](nom_client), [Lina](prenom_client), [60312997584](num_compte), du [2021-03-17](date_debut) au [2022-07-13](date_fin)
+    - [Jennifer](nom_client), [Moore](prenom_client), [12164372924316812063](rib), du [15/07/2017](date_debut) au [17/04/2022](date_fin)
+    - [Jeffrey](nom_client), [Sparks](prenom_client), [35028677241718269335](rib), du [2017-04-11](date_debut) au [2025-08-01](date_fin)
+    - [Ben Hammouda](nom_client), [Asma](prenom_client), [11256992490](num_compte), du [2015-12-17](date_debut) au [2017-01-08](date_fin)
+    - [jones](nom_client), [alexis](prenom_client), [18037737203](num_compte), du [27/07/2017](date_debut) au [02/01/2018](date_fin)
+    - Compet [24463894565](num_compte)  (RIB, [50499896213369438459) ?](rib) ouvert pra [Lucy](prenom_client) [Blanc](nom_client) du [2017-09-20](date_debut) au [2024-12-03.](date_fin)
+    - [John](nom_client), [Jensen](prenom_client), [51264478869](num_compte), du [26/04/2016](date_debut) au [14/06/2016](date_fin)
+    - [Ben Amor](nom_client), [Aya](prenom_client), [34920961853](num_compte), du [2014-04-02](date_debut) au [2020-10-06](date_fin)
+    - [HERNANDEZ](nom_client), [JAMES](prenom_client), [19710397301](num_compte), du [2021-07-27](date_debut) au [2023-05-30](date_fin)
+    - [Sharon](nom_client), [Hernandez](prenom_client), [36535593019762378001](rib), du [2019-10-01](date_debut) au [2021-05-12](date_fin)
+    - [Ben YAGHMI](nom_client), [Fatma](prenom_client), [44230597810573940221](rib), du [2014-10-21](date_debut) au [2018-08-17](date_fin)
+    - [Jerry](nom_client), [Jones](prenom_client), [75134622296361483820](rib), du [2022-08-14](date_debut) au [2024-12-27](date_fin)
+    - [MILLER](nom_client), [JEAN](prenom_client), [55268804787](num_compte), du [2015-01-23](date_debut) au [2017-02-09](date_fin)
+    - [Kimberly](nom_client), [Reynolds](prenom_client), [83695389451](num_compte), du [05/04/2017](date_debut) au [26/12/2019](date_fin)
+    - [Joshua](nom_client), [Tucker](prenom_client), [44695738871](num_compte), du [07/08/2020](date_debut) au [11/10/2025](date_fin)
+    - [Andrew](nom_client), [Ruiz](prenom_client), [39152148718902147754](rib), du [2016-08-09](date_debut) au [2023-03-30](date_fin)
+    - [Brittney](nom_client), [Meyers](prenom_client), [23496115590329148811](rib), du [2022-04-01](date_debut) au [2022-11-07](date_fin)
+    - [Thomas](nom_client), [Cabrera](prenom_client), [02066135671498239452](rib), du [09/10/2021](date_debut) au [21/12/2022](date_fin)
+    - [Melanie](nom_client), [Thompson](prenom_client), [51831979455178759594](rib), du [2014-11-29](date_debut) au [2016-04-10](date_fin)
+    - [collins](nom_client), [aaron](prenom_client), [10392760017](num_compte), du [2021-08-15](date_debut) au [2025-10-19](date_fin)
+    - [rowland](nom_client), [victoria](prenom_client), [39950985705](num_compte), du [2019-05-13](date_debut) au [2022-11-23](date_fin)
+    - [Neveu,](nom_client) [Julie,](prenom_client) [71913544498,](num_compte) [62521677406485807560,](rib) du [2020-04-22](date_debut) au [2023-06-1.4](date_fin)
+    - [farmer](nom_client), [vanessa](prenom_client), [03080739554](num_compte), du [2014-11-03](date_debut) au [2022-02-19](date_fin)
+    - [Heather](nom_client), [Mullen](prenom_client), [53535821759793559259](rib), du [2015-11-30](date_debut) au [2024-08-01](date_fin)
+    - [JOHN](nom_client), [BROOKS](prenom_client), [57960388611](num_compte), du [2015-04-21](date_debut) au [2023-05-07](date_fin)
+    - [Mohammed](nom_client), [Ali](prenom_client), [21001000773](num_compte), du [2017-12-25](date_debut) au [2020-07-19](date_fin)
+    - [James](nom_client), [Castaneda](prenom_client), [07374176108872408082](rib), du [2017-02-06](date_debut) au [2020-08-21](date_fin)
+    - [Philippien](prenom_client) [ Rousseau,,](nom_client) numéro de  compte: [76798143395,](num_compte) RIB: [43086130548213491595,](rib) période: [ 2016-05-26](date_debut) à [2023-09-25.](date_fin)
+    - [Jacuqes, ](nom_client) [Agnès,](prenom_client) [12783026592,](num_compte) [55436795956826353516,](rib) du [ 2022-07-22](date_debut) au [2025-01-20.](date_fin)
+    - [fisher](nom_client), [angela](prenom_client), [32669197448](num_compte), du [2016-10-31](date_debut) au [2016-11-01](date_fin)
+    - [Travis](nom_client), [Bell](prenom_client), [87015225332010288962](rib), du [2023-02-26](date_debut) au [2025-11-22](date_fin)
+    - [robertson](nom_client), [pamela](prenom_client), [05979120344](num_compte), du [2015-03-16](date_debut) au [2016-01-16](date_fin)
+    - [Ben Miled](nom_client), [Rania](prenom_client), [24981207183](num_compte), du [2018-06-14](date_debut) au [2023-10-17](date_fin)
+    - [William](nom_client), [Brown](prenom_client), [59376408959725977435](rib), du [2016-08-16](date_debut) au [2021-01-26](date_fin)
+    - [Lauren](nom_client), [Galvan](prenom_client), [93860296122132667963](rib),du [2023-12-28](date_debut) au [2024-10-22](date_fin)
+    - [Alcie](prenom_client) possède le  cmopte numéro [64937504384](num_compte) R(IB: [09885803728357788821)](rib) deupis [2019-01-07?](date_debut)  juqsu''''à [2023-07-21.](date_fin)
+    - [Roberto](nom_client), [Edwards](prenom_client), [62553560424289650653](rib), du [2018-12-02](date_debut) au [2021-01-31](date_fin)
+    - [Ben Jemaa](nom_client), [Leila](prenom_client), [85893526739996373513](rib), du [2014-04-16](date_debut) au [2025-04-11](date_fin)
+    - [Ben Haj Ali](nom_client), [Sana](prenom_client), [23029735774008564673](rib), du [2014-06-24](date_debut) au [2025-12-29](date_fin)
+   - Compte [46043941715.](num_compte) (RIB  [17122750242420030892)](rib) ouvert par  [Frédéric ](prenom_client) [ Pasquier](nom_client) du [2021-09-23 !](date_debut) au [2023-08-23. ](date_fin)
+    - [Robin](nom_client), [Phillips](prenom_client), [91430517284028213240](rib), du [2016-05-08](date_debut) au [2016-10-20](date_fin)
+    - [Sherlly](nom_client), [Evans](prenom_client), [12028692209234205124](rib), du [2019-07-19](date_debut) au [2019-10-21](date_fin)
+    - [Bruce](nom_client), [Doyle](prenom_client), [88543113475628681603](rib), du [2017-11-13](date_debut) au [2025-10-15](date_fin)
+    - [Laura](nom_client), [Singh](prenom_client), [04795288414590011581](rib), du [2016-07-09](date_debut) au [2024-08-25](date_fin)
+    - [ Josette](prenom_client) possède le compte numéro [ 57983873671](num_compte) (RIB: [00076935211707455440)](rib) depuis [2019-12-26](date_debut) jusqu''''à    [2023-12-25.](date_fin)
+    - [MCCARTHY](nom_client), [KIMBERLY](prenom_client), [26164582531](num_compte), du [2020-08-29](date_debut) au [2020-09-20](date_fin)
+    - [Lopes,](nom_client) [Patricia,](prenom_client) [81212942958,](num_compte) [25541498240675659674,](rib) du? [2022-02-20](date_debut) au, [2024-07-15.](date_fin)
+    - Le,  client [Jean](nom_client) [Julien](prenom_client) possède le  copmte [69524950891](num_compte) et  le  RBI [30609392725486469795](rib) du [2022-12-10.](date_debut)  au [2024-12-01.](date_fin)
+    - [burke](nom_client), [james](prenom_client), [70448227410](num_compte), du [2019-08-02](date_debut) au [2020-12-25](date_fin)
+    - [BLACK](nom_client), [MARY](prenom_client), [31439991551](num_compte), du [2017-01-17](date_debut) au [2024-09-02](date_fin)
+    - [Racheql](nom_client), [Smith](prenom_client), [89946137056982082029](rib), du [2023-04-28](date_debut) au [2024-03-04](date_fin)
+    - [John](nom_client), [Anthony](prenom_client), [35887035559543436724](rib), du [2017-03-05](date_debut) au [2017-06-21](date_fin)
+    - [Beverly](nom_client), [Knight](prenom_client), [72304656373359714028](rib), du [2017-01-01](date_debut) au [2018-10-10](date_fin)
+    - [Ben Othman](nom_client), [Zied](prenom_client), [84658993393](num_compte), du [2014-05-24](date_debut) au [2020-06-08](date_fin)
+    - [aMrthe](prenom_client) [Hamon, ](nom_client) numéro de compte: [20271139956,](num_compte) RBI: [ 45715143038717785988,](rib) période: [2018-11-15 ](date_debut) à [0225-03-11.](date_fin)
+    - [Brandon](nom_client), [Morrison](prenom_client), [73341629842340636319](rib), du [2015-12-24](date_debut) au [2023-11-09](date_fin)
+    - [Andrea](nom_client), [Mckenzie](prenom_client), [41291836809](num_compte), du [2020-04-28](date_debut) au [2024-07-10](date_fin)
+    - Le cleint [Chauvet:](nom_client) [Berndaette](prenom_client)  possède le comtpe [85711524060 ](num_compte) et le RIB: [ 47501314880639615695](rib) du [ 2015-06-08](date_debut) au [2024-01-24.](date_fin)
+    - [Kelly](nom_client), [Butler](prenom_client), [01696582186535732594](rib), du [2016-05-15](date_debut) au [2019-06-24](date_fin)
+    - [garcia](nom_client), [tracy](prenom_client), [06811772639](num_compte), du [2014-04-06](date_debut) au [2019-05-09](date_fin)
+    - [Jesse](nom_client), [Atkins](prenom_client), [87814120066659523780](rib), du [2020-07-22](date_debut) au [2021-09-03](date_fin)
+    - [Leconte,](nom_client) [Emmanuelle,](prenom_client) [18884034151,](num_compte) [5573196784190721723,0](rib) du [2017-11-01](date_debut) au [2024-05-15.](date_fin)
+    - [Ahmed](nom_client), [Haffar](prenom_client), [52200000639](num_compte), du [2018-06-11](date_debut) au [2024-02-03](date_fin)
+- intent: goodbye
+  examples: '- Merci pour votre disponibilité, à bientôt !
+
+    - Bonne fin de semaine à vous !
+
+    - Excellente journée à vous !
+
+    - À plus tard !
+
+    - C’était un plaisir, à bientôt !
+
+    - Merci beaucoup et à plus !
+
+    - À très bientôt, prenez soin de vous !
+
+    - Je vous dis à très bientôt !
+
+    - À la prochaine rencontre !
+
+    - Merci et à très bientôt !
+
+    - Merci beaucoup, à bientôt !
+
+    - Bonne soirée et à bientôt !
+
+    - À une prochaine fois !
+
+    - Bonne journée à vous et à bientôt !
+
+    - Merci et à bientôt, prenez soin de vous !
+
+    - Merci, à plus !
+
+    - Bonne continuation !
+
+    - Bonne soirée à vous !
+
+    - - Passez une excellente journée !
+
+    - à bientôt
+
+    - Merci pour tout, à la prochaine !
+
+    - à la prochaine'

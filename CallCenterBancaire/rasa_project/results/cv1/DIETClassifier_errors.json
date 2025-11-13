@@ -1,0 +1,6283 @@
+[
+  {
+    "text": "Hello",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9998582601547241,
+        "value": "Hello",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Roumie, Salem, 19818059421",
+    "entities": [
+      {
+        "start": 15,
+        "end": 26,
+        "value": "19818059421",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9998693466186523,
+        "value": "Roumie",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9999252557754517,
+        "value": "Salem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9904492497444153,
+        "value": "19818059421",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "lisa, gilbert, 77287702414183310394",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "lisa",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 13,
+        "value": "gilbert",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "77287702414183310394",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9998037219047546,
+        "value": "Lisa",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.9998555183410645,
+        "value": "Gilbert",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9996774196624756,
+        "value": "77287702414183310394",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Patricia, Kelley, 00960314029008021910",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Patricia",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "Kelley",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 38,
+        "value": "00960314029008021910",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.999975323677063,
+        "value": "Patricia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9999744892120361,
+        "value": "Kelley",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.999963641166687,
+        "value": "00960314029008021910",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Michael, Weber(prenom_client), [53785915293529853366",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Michael",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 52,
+        "value": "Weber(prenom_client), [53785915293529853366",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9417294859886169,
+        "value": "MICHAEL",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 28,
+        "confidence_entity": 0.995253324508667,
+        "value": "Weber(prenom_client",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 31,
+        "end": 52,
+        "confidence_entity": 0.9999293088912964,
+        "value": "[53785915293529853366",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Patricia, Taylor, 25507262789400453159",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Patricia",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "Taylor",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 38,
+        "value": "25507262789400453159",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999674558639526,
+        "value": "Patricia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9999122619628906,
+        "value": "taylor",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.9999568462371826,
+        "value": "25507262789400453159",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Taylor, Jones, 10612893081777378370",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Taylor",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Jones",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "10612893081777378370",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.999987006187439,
+        "value": "taylor",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9998875856399536,
+        "value": "jones",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9999641180038452,
+        "value": "10612893081777378370",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jonathan, Jones, 72046808272",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Jonathan",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 15,
+        "value": "Jones",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "72046808272",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999769926071167,
+        "value": "Jonathan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.9999837875366211,
+        "value": "jones",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9984468817710876,
+        "value": "72046808272",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Abdelmoumen Ben Haj, Kacem, 80129000126",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Abdelmoumen Ben Haj",
+        "entity": "nom_client"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "value": "Kacem",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 28,
+        "end": 39,
+        "value": "80129000126",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prenom_client",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9509112238883972,
+        "value": "Haj",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.9988529682159424,
+        "value": "Kacem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 28,
+        "end": 39,
+        "confidence_entity": 0.9970811009407043,
+        "value": "80129000126",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ayoub, Abdelhakim, 54901157679",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Ayoub",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 17,
+        "value": "Abdelhakim",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "54901157679",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prenom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.671701967716217,
+        "value": "Ayoub",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.6223669648170471,
+        "value": "Abdelhakim",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9998794794082642,
+        "value": "54901157679",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Marcia, Moore, 23209784835736992996",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Marcia",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Moore",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "23209784835736992996",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999904632568359,
+        "value": "Marcia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9999814033508301,
+        "value": "moore",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9400339126586914,
+        "value": "23209784835736992996",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samantha, Payne, 08012665191193799200",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Samantha",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 15,
+        "value": "Payne",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 37,
+        "value": "08012665191193799200",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999887943267822,
+        "value": "Samantha",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.9999520778656006,
+        "value": "Payne",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.5207043290138245,
+        "value": "08012665191193799200",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Chad, Scott, 41166964053",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Chad",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 11,
+        "value": "Scott",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 13,
+        "end": 24,
+        "value": "41166964053",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999653100967407,
+        "value": "Chad",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 11,
+        "confidence_entity": 0.9999202489852905,
+        "value": "scott",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 13,
+        "end": 24,
+        "confidence_entity": 0.9228233098983765,
+        "value": "41166964053",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sara, Glenn, 82321514072032137895",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Sara",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 11,
+        "value": "Glenn",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 13,
+        "end": 33,
+        "value": "82321514072032137895",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9998723268508911,
+        "value": "SARA",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 11,
+        "confidence_entity": 0.9999661445617676,
+        "value": "Glenn",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 13,
+        "end": 33,
+        "confidence_entity": 0.9996980428695679,
+        "value": "82321514072032137895",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jessica, Goodwin, 73837654152",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Jessica",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 16,
+        "value": "Goodwin",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "value": "73837654152",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.999954342842102,
+        "value": "jessica",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.9998905658721924,
+        "value": "Goodwin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.9997097849845886,
+        "value": "73837654152",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Christopher, Burke, 10305290052",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Christopher",
+        "entity": "nom_client"
+      },
+      {
+        "start": 13,
+        "end": 18,
+        "value": "Burke",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "10305290052",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9998063445091248,
+        "value": "christopher",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9998340606689453,
+        "value": "burke",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.8564072251319885,
+        "value": "10305290052",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ROCHA, DONALD, 80824316690",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "ROCHA",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 13,
+        "value": "DONALD",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "80824316690",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999788999557495,
+        "value": "ROCHA",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.9999680519104004,
+        "value": "Donald",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.954596221446991,
+        "value": "80824316690",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Christopher, Gray, 16478674002",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Christopher",
+        "entity": "nom_client"
+      },
+      {
+        "start": 13,
+        "end": 17,
+        "value": "Gray",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "16478674002",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9999082088470459,
+        "value": "christopher",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9999465942382812,
+        "value": "Gray",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9992254972457886,
+        "value": "16478674002",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nathan, Anderson, 50428550206",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Nathan",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Anderson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "value": "50428550206",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999338388442993,
+        "value": "Nathan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9999439716339111,
+        "value": "anderson",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.9997865557670593,
+        "value": "50428550206",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Corey, Stark, 49469797180644046953",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Corey",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Stark",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "49469797180644046953",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999804496765137,
+        "value": "Corey",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9999836683273315,
+        "value": "Stark",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.9998238682746887,
+        "value": "49469797180644046953",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Keith, Cook, 00869731196082906625",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Keith",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 11,
+        "value": "Cook",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 13,
+        "end": 33,
+        "value": "00869731196082906625",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999253749847412,
+        "value": "Keith",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.9999818801879883,
+        "value": "Cook",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 13,
+        "end": 33,
+        "confidence_entity": 0.99988853931427,
+        "value": "00869731196082906625",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mark, Davis, 49080178265090826244",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Mark",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 11,
+        "value": "Davis",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 13,
+        "end": 33,
+        "value": "49080178265090826244",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999874830245972,
+        "value": "Mark",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 11,
+        "confidence_entity": 0.9999837875366211,
+        "value": "DAVIS",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 13,
+        "end": 33,
+        "confidence_entity": 0.9996848106384277,
+        "value": "49080178265090826244",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Dale, Jordan, 41934355298484127835",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Dale",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "Jordan",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "41934355298484127835",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999697208404541,
+        "value": "Dale",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.999947190284729,
+        "value": "Jordan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.999927282333374,
+        "value": "41934355298484127835",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Justin, Wright, 11455118393273656303",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Justin",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Wright",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "11455118393273656303",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9998052716255188,
+        "value": "Justin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9998786449432373,
+        "value": "Wright",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9997418522834778,
+        "value": "11455118393273656303",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mohammed, Zakaria, 20021582402",
+    "entities": [
+      {
+        "start": 19,
+        "end": 30,
+        "value": "20021582402",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9998332262039185,
+        "value": "Mohammed",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.999955415725708,
+        "value": "zakaria",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9999302625656128,
+        "value": "20021582402",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mohamed, 3 digits, 89190045103",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "mohamed",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 17,
+        "value": "3 digits",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "89190045103",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9875824451446533,
+        "value": "MOHAMED",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 9,
+        "end": 10,
+        "confidence_entity": 0.9985564351081848,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9999443292617798,
+        "value": "digits",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9999216794967651,
+        "value": "89190045103",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "becker, micheal, 74892208966",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "becker",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "value": "micheal",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "74892208966",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.9999117851257324,
+        "value": "Micheal",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9639562964439392,
+        "value": "74892208966",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "john, malone, 19550017550694248756",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "john",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "malone",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "19550017550694248756",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9997943043708801,
+        "value": "john",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9988116025924683,
+        "value": "malone",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.9998561143875122,
+        "value": "19550017550694248756",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "angela, dunn, 09662039070732376360",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "angela",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "value": "dunn",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "09662039070732376360",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9998844861984253,
+        "value": "Angela",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9999727010726929,
+        "value": "dunn",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.999795138835907,
+        "value": "09662039070732376360",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thomas, Scott, 28415603459009884375",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Thomas",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Scott",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "28415603459009884375",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999656677246094,
+        "value": "thomas",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9998904466629028,
+        "value": "scott",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9982335567474365,
+        "value": "28415603459009884375",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Taylor, Lewis, 19423388170",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Taylor",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Lewis",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "19423388170",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999109506607056,
+        "value": "taylor",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9999511241912842,
+        "value": "Lewis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9999690055847168,
+        "value": "19423388170",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mostafa, Yassine, 10000000884",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Mostafa",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 16,
+        "value": "Yassine",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "value": "10000000884",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999719858169556,
+        "value": "Mostafa",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.9998562335968018,
+        "value": "Yassine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.9987358450889587,
+        "value": "10000000884",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Najib, El Mesbahi, 22296297, 64000031361",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Najib",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 17,
+        "value": "El Mesbahi",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 29,
+        "end": 40,
+        "value": "64000031361",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9997139573097229,
+        "value": "Najib",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9968751668930054,
+        "value": "El",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9998540878295898,
+        "value": "Mesbahi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.9996612071990967,
+        "value": "22296297",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 29,
+        "end": 40,
+        "confidence_entity": 0.9983396530151367,
+        "value": "64000031361",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Stephanie, Carrillo, 98989206553488803298",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Stephanie",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 19,
+        "value": "Carrillo",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 21,
+        "end": 41,
+        "value": "98989206553488803298",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9999768733978271,
+        "value": "Stephanie",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.9999862909317017,
+        "value": "Carrillo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 21,
+        "end": 41,
+        "confidence_entity": 0.966195285320282,
+        "value": "98989206553488803298",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cory, Nichols, 52926527942",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Cory",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 13,
+        "value": "Nichols",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "52926527942",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9998113512992859,
+        "value": "Cory",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.9999549388885498,
+        "value": "Nichols",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9999641180038452,
+        "value": "52926527942",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Christina, Anderson, 45395663586832908223",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Christina",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 19,
+        "value": "Anderson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 21,
+        "end": 41,
+        "value": "45395663586832908223",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9998425245285034,
+        "value": "christina",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.9999312162399292,
+        "value": "anderson",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 21,
+        "end": 41,
+        "confidence_entity": 0.9997710585594177,
+        "value": "45395663586832908223",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Matthew, Rice II, 33512579023334781616",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Matthew",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 16,
+        "value": "Rice II",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 38,
+        "value": "33512579023334781616",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999778270721436,
+        "value": "MATTHEW",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.9910174608230591,
+        "value": "Rice II",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.5439252853393555,
+        "value": "33512579023334781616",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Adam, Daniels, 31014880533",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Adam",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 13,
+        "value": "Daniels",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "31014880533",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999346733093262,
+        "value": "Adam",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.9999433755874634,
+        "value": "Daniels",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9997878670692444,
+        "value": "31014880533",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nadia, Nadia, 55840039269",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Nadia",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Nadia",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "55840039269",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "NB, Idriss, 00000000000000000000",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "NB",
+        "entity": "nom_client"
+      },
+      {
+        "start": 4,
+        "end": 10,
+        "value": "Idriss",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 12,
+        "end": 32,
+        "value": "00000000000000000000",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.999976634979248,
+        "value": "NB",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.9999817609786987,
+        "value": "Idriss",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 12,
+        "end": 32,
+        "confidence_entity": 0.7967350482940674,
+        "value": "00000000000000000000",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Youssef, Amine, 21000281095",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Youssef",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "Amine",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "21000281095",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999614953994751,
+        "value": "Youssef",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.52900230884552,
+        "value": "Amine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9837473034858704,
+        "value": "21000281095",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "David, Anderson, 26868459975785127293",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "David",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 15,
+        "value": "Anderson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 37,
+        "value": "26868459975785127293",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.99994957447052,
+        "value": "david",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.9999573230743408,
+        "value": "anderson",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.9998200535774231,
+        "value": "26868459975785127293",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Blake, Woodard, 77523876599734558374",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Blake",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 14,
+        "value": "Woodard",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "77523876599734558374",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999839067459106,
+        "value": "Blake",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9999842643737793,
+        "value": "Woodard",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.7362639904022217,
+        "value": "77523876599734558374",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Angelica, Lloyd, 41915254563417495092",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Angelica",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 15,
+        "value": "Lloyd",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 37,
+        "value": "41915254563417495092",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999788999557495,
+        "value": "Angelica",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.9999837875366211,
+        "value": "Lloyd",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.5929854512214661,
+        "value": "41915254563417495092",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "James, Jones, 79738780513",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "James",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Jones",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "79738780513",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999430179595947,
+        "value": "JAMES",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9999676942825317,
+        "value": "jones",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9999284744262695,
+        "value": "79738780513",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Taylor, Bass, 47383678973",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Taylor",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "value": "Bass",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "47383678973",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999363422393799,
+        "value": "taylor",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9999490976333618,
+        "value": "Bass",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9999637603759766,
+        "value": "47383678973",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Roger, Bridges, 77260688477",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Roger",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 14,
+        "value": "Bridges",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "77260688477",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9998821020126343,
+        "value": "Roger",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9999302625656128,
+        "value": "Bridges",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9999691247940063,
+        "value": "77260688477",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Stephen, Williams, 28762055973259154577",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Stephen",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 17,
+        "value": "Williams",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 39,
+        "value": "28762055973259154577",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999563694000244,
+        "value": "Stephen",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.9999550580978394,
+        "value": "williams",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 19,
+        "end": 39,
+        "confidence_entity": 0.7728458046913147,
+        "value": "28762055973259154577",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Alex, Cannon, 36693405645313943564",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Alex",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "Cannon",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "36693405645313943564",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999792575836182,
+        "value": "Alex",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9999858140945435,
+        "value": "Cannon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.5170679688453674,
+        "value": "36693405645313943564",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ou est le 971 836 0789",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9209245443344116,
+        "value": "le",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.5657251477241516,
+        "value": "971",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.6147510409355164,
+        "value": "836",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9901663064956665,
+        "value": "0789",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nadine, Mohamed, 17910763785",
+    "entities": [
+      {
+        "start": 17,
+        "end": 28,
+        "value": "17910763785",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999773502349854,
+        "value": "Nadine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.9999456405639648,
+        "value": "MOHAMED",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9998481273651123,
+        "value": "17910763785",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nom, Prenom, 28014865088",
+    "entities": [
+      {
+        "start": 13,
+        "end": 24,
+        "value": "28014865088",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9996194839477539,
+        "value": "Nom",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 5,
+        "end": 11,
+        "confidence_entity": 0.9998432397842407,
+        "value": "Prenom",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 13,
+        "end": 24,
+        "confidence_entity": 0.9919014573097229,
+        "value": "28014865088",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "stevens, tanya, 41106857684",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "stevens",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "tanya",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "41106857684",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999313354492188,
+        "value": "stevens",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9992111921310425,
+        "value": "Tanya",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9992355108261108,
+        "value": "41106857684",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Beverly, Knight, 72304656373359714028",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Beverly",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 15,
+        "value": "Knight",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 37,
+        "value": "72304656373359714028",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999731779098511,
+        "value": "Beverly",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9999772310256958,
+        "value": "KNIGHT",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.9732084274291992,
+        "value": "72304656373359714028",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Austin, Martinez, 79532767568703876433",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Austin",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Martinez",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 38,
+        "value": "79532767568703876433",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999336004257202,
+        "value": "Austin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9995812773704529,
+        "value": "Martinez",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.9164092540740967,
+        "value": "79532767568703876433",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Glenn, Cunningham, 01971399681",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Glenn",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 17,
+        "value": "Cunningham",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "01971399681",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9992234706878662,
+        "value": "Glenn",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9982751607894897,
+        "value": "CUNNINGHAM",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9999040365219116,
+        "value": "01971399681",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Amanda, Boyd, 38845511024",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Amanda",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "value": "Boyd",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "38845511024",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999516010284424,
+        "value": "Amanda",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9997957348823547,
+        "value": "BOYD",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9999176263809204,
+        "value": "38845511024",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Shelby, Reynolds, 37463552922821692118",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Shelby",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Reynolds",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 38,
+        "value": "37463552922821692118",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999812841415405,
+        "value": "Shelby",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.999984622001648,
+        "value": "Reynolds",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.9993138313293457,
+        "value": "37463552922821692118",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Donald, Adams, 83709456852501285666",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Donald",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Adams",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "83709456852501285666",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999672174453735,
+        "value": "DONALD",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9999784231185913,
+        "value": "Adams",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.6931262016296387,
+        "value": "83709456852501285666",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Danielle, Chan, 43479853100789229071",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Danielle",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "value": "Chan",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "43479853100789229071",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999831914901733,
+        "value": "Danielle",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.9999767541885376,
+        "value": "Chan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9945914149284363,
+        "value": "43479853100789229071",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nathan, Griffin, 96063767856122523062",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Nathan",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "value": "Griffin",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 37,
+        "value": "96063767856122523062",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999657869338989,
+        "value": "Nathan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.9998295307159424,
+        "value": "GRIFFIN",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.8370973467826843,
+        "value": "96063767856122523062",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Luke, Kelley, 19876950257",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Luke",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "Kelley",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "19876950257",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999244213104248,
+        "value": "Luke",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9998881816864014,
+        "value": "Kelley",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9999151229858398,
+        "value": "19876950257",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Elizabeth, Torres, 55436896786",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Elizabeth",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 17,
+        "value": "Torres",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "55436896786",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9999490976333618,
+        "value": "ELIZABETH",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9999353885650635,
+        "value": "torres",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.999885082244873,
+        "value": "55436896786",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jermaine, Martinez, 15413521685987472964",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Jermaine",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 18,
+        "value": "Martinez",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 40,
+        "value": "15413521685987472964",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9996771812438965,
+        "value": "Jermaine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9993200302124023,
+        "value": "Martinez",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 20,
+        "end": 40,
+        "confidence_entity": 0.9992634654045105,
+        "value": "15413521685987472964",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Joshua, Tucker, 44695738871",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Joshua",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Tucker",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "44695738871",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999631643295288,
+        "value": "Joshua",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.999929666519165,
+        "value": "Tucker",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.999915361404419,
+        "value": "44695738871",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ahmed, Abdel, 20000000000000001630",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Ahmed",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Abdel",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "20000000000000001630",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9998856782913208,
+        "value": "Ahmed",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9999065399169922,
+        "value": "Abdel",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.9998443126678467,
+        "value": "20000000000000001630",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Antonin, Julien, 98101010003",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Antonin",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 15,
+        "value": "Julien",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "98101010003",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999707937240601,
+        "value": "Antonin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9998148083686829,
+        "value": "Julien",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9998099207878113,
+        "value": "98101010003",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Andrea, Mckenzie, 41291836809",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Andrea",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Mckenzie",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "value": "41291836809",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999867677688599,
+        "value": "Andrea",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9999628067016602,
+        "value": "Mckenzie",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.863921582698822,
+        "value": "41291836809",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Colin, Wood, 12058670227",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Colin",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 11,
+        "value": "Wood",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 13,
+        "end": 24,
+        "value": "12058670227",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999570846557617,
+        "value": "Colin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.9999539852142334,
+        "value": "Wood",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 13,
+        "end": 24,
+        "confidence_entity": 0.9996788501739502,
+        "value": "12058670227",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jeffrey, Gregory MD, 45012839473",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Jeffrey",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 19,
+        "value": "Gregory MD",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 21,
+        "end": 32,
+        "value": "45012839473",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999622106552124,
+        "value": "Jeffrey",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 19,
+        "confidence_entity": 0.9966713786125183,
+        "value": "Gregory MD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.6033061146736145,
+        "value": "45012839473",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Christine, Mckinney, 01764183247153245729",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Christine",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 19,
+        "value": "Mckinney",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 21,
+        "end": 41,
+        "value": "01764183247153245729",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9999762773513794,
+        "value": "christine",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.9999508857727051,
+        "value": "Mckinney",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 21,
+        "end": 41,
+        "confidence_entity": 0.9998754262924194,
+        "value": "01764183247153245729",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sara, Koch, 92471194619944616034",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Sara",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 10,
+        "value": "Koch",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 12,
+        "end": 32,
+        "value": "92471194619944616034",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999746084213257,
+        "value": "SARA",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 10,
+        "confidence_entity": 0.9999816417694092,
+        "value": "Koch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 12,
+        "end": 32,
+        "confidence_entity": 0.7501624226570129,
+        "value": "92471194619944616034",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Shannon, Leon, 20391806205244391515",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Shannon",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "Leon",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "20391806205244391515",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999406337738037,
+        "value": "Shannon",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.9986898303031921,
+        "value": "Leon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9997566342353821,
+        "value": "20391806205244391515",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Michael, Lewis, 78394801408801794281",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Michael",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "Lewis",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "78394801408801794281",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999772310256958,
+        "value": "MICHAEL",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9999299049377441,
+        "value": "Lewis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.99991774559021,
+        "value": "78394801408801794281",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sharon, Hernandez, 36535593019762378001",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Sharon",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 17,
+        "value": "Hernandez",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 39,
+        "value": "36535593019762378001",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.999976634979248,
+        "value": "SHARON",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 17,
+        "confidence_entity": 0.9999569654464722,
+        "value": "HERNANDEZ",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 19,
+        "end": 39,
+        "confidence_entity": 0.9995403289794922,
+        "value": "36535593019762378001",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ciao",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8662335872650146,
+        "value": "ciao",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mahmoud, Othmane, 14192008851",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "14192008851",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999802112579346,
+        "value": "Mahmoud",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.9999797344207764,
+        "value": "Othmane",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.9989387392997742,
+        "value": "14192008851",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "nouir, nouir, 13401315618",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "nouir",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "nouir",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "13401315618",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9650527238845825,
+        "value": "nouir",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9863843321800232,
+        "value": "13401315618",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rose, wallace, 46347613753682252569",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rose",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 13,
+        "value": "wallace",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "46347613753682252569",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9994837045669556,
+        "value": "Rose",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.9992722868919373,
+        "value": "wallace",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9998791217803955,
+        "value": "46347613753682252569",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sherry, Wright, 90949725542",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Sherry",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Wright",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "90949725542",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999560117721558,
+        "value": "Sherry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9999301433563232,
+        "value": "WRIGHT",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9999455213546753,
+        "value": "90949725542",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Stephanie, Mitchell, 90870366791",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Stephanie",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 19,
+        "value": "Mitchell",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 21,
+        "end": 32,
+        "value": "90870366791",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9999765157699585,
+        "value": "Stephanie",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.999951958656311,
+        "value": "MITCHELL",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.9999654293060303,
+        "value": "90870366791",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Rachel, Rodriguez, 63982200423",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Rachel",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 17,
+        "value": "Rodriguez",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "63982200423",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999103546142578,
+        "value": "Rachel",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 17,
+        "confidence_entity": 0.999914288520813,
+        "value": "rodriguez",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9999548196792603,
+        "value": "63982200423",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Walter, Hall, 42698343594",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Walter",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "value": "Hall",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "42698343594",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9997660517692566,
+        "value": "WALTER",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9998026490211487,
+        "value": "Hall",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9998811483383179,
+        "value": "42698343594",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mohamed Amine, Benkraoua, 10033545000000001423",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Mohamed Amine",
+        "entity": "nom_client"
+      },
+      {
+        "start": 15,
+        "end": 24,
+        "value": "Benkraoua",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 26,
+        "end": 46,
+        "value": "10033545000000001423",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999151229858398,
+        "value": "MOHAMED",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9986011385917664,
+        "value": "Amine",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.5758590698242188,
+        "value": "Benkraoua",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 26,
+        "end": 46,
+        "confidence_entity": 0.9998663663864136,
+        "value": "10033545000000001423",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "William, Chavez, 93892650786",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "William",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 15,
+        "value": "Chavez",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "93892650786",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999557733535767,
+        "value": "William",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9999566078186035,
+        "value": "chavez",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9992056488990784,
+        "value": "93892650786",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Miguel, Robinson III, 34436755077",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Miguel",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 20,
+        "value": "Robinson III",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 22,
+        "end": 33,
+        "value": "34436755077",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9998801946640015,
+        "value": "Miguel",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 20,
+        "confidence_entity": 0.9738461971282959,
+        "value": "Robinson III",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.999929666519165,
+        "value": "34436755077",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Patricia, Mckinney, 42424998509",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Patricia",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 18,
+        "value": "Mckinney",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "42424998509",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999643564224243,
+        "value": "Patricia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9999092817306519,
+        "value": "MCKINNEY",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.9999511241912842,
+        "value": "42424998509",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Angela, Oconnell, 23166817842",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Angela",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Oconnell",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "value": "23166817842",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.999893307685852,
+        "value": "angela",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9999330043792725,
+        "value": "Oconnell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.9999654293060303,
+        "value": "23166817842",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Djamila, Faiza, 10000000650",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Djamila",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "Faiza",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "10000000650",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999709129333496,
+        "value": "Djamila",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9999101161956787,
+        "value": "Faiza",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9621294140815735,
+        "value": "10000000650",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sarah, Johnson, 46444810890",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Sarah",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 14,
+        "value": "Johnson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "46444810890",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.999953031539917,
+        "value": "Sarah",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9999077320098877,
+        "value": "johnson",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9998443126678467,
+        "value": "46444810890",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Katie, Martin, 22632441276",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Katie",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 13,
+        "value": "Martin",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "22632441276",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999781847000122,
+        "value": "Katie",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.9999634027481079,
+        "value": "MARTIN",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9823249578475952,
+        "value": "22632441276",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bonnie, Robinson, 59514816434",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Bonnie",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Robinson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "value": "59514816434",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999372959136963,
+        "value": "Bonnie",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9999642372131348,
+        "value": "ROBINSON",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.9999607801437378,
+        "value": "59514816434",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Aymeric, Reda, 44817436421",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Aymeric",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "Reda",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "44817436421",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999639987945557,
+        "value": "Aymeric",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.9999572038650513,
+        "value": "Reda",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9533963203430176,
+        "value": "44817436421",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Dale, Williams, 53034294612",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Dale",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 14,
+        "value": "Williams",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "53034294612",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.999900221824646,
+        "value": "Dale",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 14,
+        "confidence_entity": 0.9999557733535767,
+        "value": "williams",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.999948263168335,
+        "value": "53034294612",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Elaine, Long, 75898686896",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Elaine",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "value": "Long",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "75898686896",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9991752505302429,
+        "value": "Elaine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9999434947967529,
+        "value": "Long",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9999579191207886,
+        "value": "75898686896",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "John, Jensen, 51264478869",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "John",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "Jensen",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "51264478869",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.999958872795105,
+        "value": "JOHN",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9997139573097229,
+        "value": "Jensen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9996269941329956,
+        "value": "51264478869",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mark, Thomas, 83404343470",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Mark",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "Thomas",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "83404343470",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999130964279175,
+        "value": "Mark",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9998455047607422,
+        "value": "thomas",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9999560117721558,
+        "value": "83404343470",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nathan, Moore, 57529131505296304470",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Nathan",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Moore",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "57529131505296304470",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.999980092048645,
+        "value": "Nathan",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.9999511241912842,
+        "value": "moore",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.9999221563339233,
+        "value": "57529131505296304470",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "BEN ABDALLAH ALI, MOHAMED, 03457601713",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "ALI",
+        "entity": "nom_client"
+      },
+      {
+        "start": 18,
+        "end": 25,
+        "value": "MOHAMED",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 27,
+        "end": 38,
+        "value": "03457601713",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.986623227596283,
+        "value": "BEN",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 4,
+        "end": 12,
+        "confidence_entity": 0.9995123147964478,
+        "value": "ABDALLAH",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9992572665214539,
+        "value": "Ali",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.9907324314117432,
+        "value": "mohamed",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 27,
+        "end": 38,
+        "confidence_entity": 0.9999231100082397,
+        "value": "03457601713",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Abdellah, Abdelmaled, 36830703089",
+    "entities": [
+      {
+        "start": 22,
+        "end": 33,
+        "value": "36830703089",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9997695088386536,
+        "value": "Abdellah",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.9999244213104248,
+        "value": "Abdelmaled",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.9962629675865173,
+        "value": "36830703089",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Noureddine, Mohsine, 52000011226",
+    "entities": [
+      {
+        "start": 21,
+        "end": 32,
+        "value": "52000011226",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9998562335968018,
+        "value": "Noureddine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.9998787641525269,
+        "value": "Mohsine",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.9898520112037659,
+        "value": "52000011226",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rodriguez, eduardo, 19686609498",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "rodriguez",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 18,
+        "value": "eduardo",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "19686609498",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prenom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9904788732528687,
+        "value": "Rodriguez",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 18,
+        "confidence_entity": 0.994046688079834,
+        "value": "Eduardo",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.9709331393241882,
+        "value": "19686609498",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "achraf, zakaria, 13018902012",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "achraf",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "value": "zakaria",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "13018902012",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9888525009155273,
+        "value": "13018902012",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "parrish, john, 46592674523",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "parrish",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "john",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "46592674523",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999337196350098,
+        "value": "parrish",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.9999758005142212,
+        "value": "JOHN",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9896814227104187,
+        "value": "46592674523",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "scott, jennifer, 45770360794",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "scott",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 15,
+        "value": "jennifer",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "45770360794",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9996071457862854,
+        "value": "scott",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.995287299156189,
+        "value": "Jennifer",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.9946585297584534,
+        "value": "45770360794",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "williams, jennifer, 90345802708",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "williams",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 18,
+        "value": "jennifer",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "90345802708",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9147448539733887,
+        "value": "Williams",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9879699945449829,
+        "value": "Jennifer",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.9916813969612122,
+        "value": "90345802708",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "jacob, delgado, 31587863746329414182",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "jacob",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 14,
+        "value": "delgado",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "31587863746329414182",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999815225601196,
+        "value": "Jacob",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.999964714050293,
+        "value": "delgado",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9998646974563599,
+        "value": "31587863746329414182",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "James, Bolton, 00494263501524800858",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "James",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 13,
+        "value": "Bolton",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 35,
+        "value": "00494263501524800858",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999549388885498,
+        "value": "JAMES",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.9999805688858032,
+        "value": "Bolton",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 15,
+        "end": 35,
+        "confidence_entity": 0.8670874238014221,
+        "value": "00494263501524800858",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Akrem, Hmida, 50012342010",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Akrem",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Hmida",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 25,
+        "value": "50012342010",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.999968409538269,
+        "value": "Akrem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.999990701675415,
+        "value": "Hmida",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.9985747337341309,
+        "value": "50012342010",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Shannon, Moore, 66222008741",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Shannon",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "Moore",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "66222008741",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.999841570854187,
+        "value": "Shannon",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9998774528503418,
+        "value": "moore",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9999605417251587,
+        "value": "66222008741",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mohamed, Amine Ayoub, 15431125004",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Mohamed",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 20,
+        "value": "Amine Ayoub",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 22,
+        "end": 33,
+        "value": "15431125004",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9965016841888428,
+        "value": "mohamed",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "nom_client",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7128800749778748,
+        "value": "Amine",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9999645948410034,
+        "value": "Ayoub",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.9999014139175415,
+        "value": "15431125004",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Kimberly, Reynolds, 83695389451",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Kimberly",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 18,
+        "value": "Reynolds",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "83695389451",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9974489808082581,
+        "value": "KIMBERLY",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9999617338180542,
+        "value": "Reynolds",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.9999412298202515,
+        "value": "83695389451",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Christina, Clayton, 90472855548",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Christina",
+        "entity": "nom_client"
+      },
+      {
+        "start": 11,
+        "end": 18,
+        "value": "Clayton",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "90472855548",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9999241828918457,
+        "value": "christina",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 11,
+        "end": 18,
+        "confidence_entity": 0.9999779462814331,
+        "value": "Clayton",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.9999629259109497,
+        "value": "90472855548",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Rachel, Finley, 59132424051616542476",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Rachel",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Finley",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "59132424051616542476",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.999786913394928,
+        "value": "Rachel",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9999455213546753,
+        "value": "Finley",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9991752505302429,
+        "value": "59132424051616542476",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Anthony, King, 96996020007",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Anthony",
+        "entity": "nom_client"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "King",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "value": "96996020007",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9999233484268188,
+        "value": "Anthony",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.9999772310256958,
+        "value": "King",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9999629259109497,
+        "value": "96996020007",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jamie, Henry MD, 59312896645789026737",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Jamie",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 15,
+        "value": "Henry MD",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 17,
+        "end": 37,
+        "value": "59312896645789026737",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.999951958656311,
+        "value": "Jamie",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.9957542419433594,
+        "value": "Henry MD",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.9810827970504761,
+        "value": "59312896645789026737",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nicholas, Fleming, 86677590819",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Nicholas",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 17,
+        "value": "Fleming",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "86677590819",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9998370409011841,
+        "value": "Nicholas",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9999504089355469,
+        "value": "Fleming",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9999631643295288,
+        "value": "86677590819",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Scott, Donovan, 11344634992",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Scott",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 14,
+        "value": "Donovan",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "11344634992",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9998210072517395,
+        "value": "scott",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9999655485153198,
+        "value": "Donovan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9999585151672363,
+        "value": "11344634992",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jack, Cook, 32113184309",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Jack",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 10,
+        "value": "Cook",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 12,
+        "end": 23,
+        "value": "32113184309",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999419450759888,
+        "value": "Jack",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 10,
+        "confidence_entity": 0.9999754428863525,
+        "value": "Cook",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 12,
+        "end": 23,
+        "confidence_entity": 0.9999693632125854,
+        "value": "32113184309",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Regina, Garcia, 31152314954",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Regina",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Garcia",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "31152314954",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999785423278809,
+        "value": "Regina",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "prenom_client",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9999719858169556,
+        "value": "garcia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9999319314956665,
+        "value": "31152314954",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Danielle, York, 44204262200",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Danielle",
+        "entity": "nom_client"
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "value": "York",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "44204262200",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999783039093018,
+        "value": "Danielle",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.9999513626098633,
+        "value": "york",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9974949359893799,
+        "value": "44204262200",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Lisa, Martinez, 99556175279",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Lisa",
+        "entity": "nom_client"
+      },
+      {
+        "start": 6,
+        "end": 14,
+        "value": "Martinez",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "99556175279",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999758005142212,
+        "value": "lisa",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 6,
+        "end": 14,
+        "confidence_entity": 0.9999828338623047,
+        "value": "MARTINEZ",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.9997010827064514,
+        "value": "99556175279",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "James, Castaneda, 07374176108872408082",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "James",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 16,
+        "value": "Castaneda",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 18,
+        "end": 38,
+        "value": "07374176108872408082",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999419450759888,
+        "value": "JAMES",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.9999825954437256,
+        "value": "Castaneda",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "num_compte",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.9966493248939514,
+        "value": "07374176108872408082",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

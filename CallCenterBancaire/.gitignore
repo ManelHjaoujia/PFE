@@ -1,0 +1,25 @@
+# Ignore environment folders
+monenv/
+.env/
+
+rasa_project/.rasa
+rasa_project/models
+rasa_project/resultat
+intents_dataset.json
+ner_dataset.json
+
+nlu.yml
+nlu_train.yml
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+*.idea/
+*.vscode/
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,120 @@
+[
+  {
+    "text": "Mohamed,Mohamed,20340063564",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Mohamed",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "value": "Mohamed",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "20340063564",
+        "entity": "num_compte"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "William,Wilson, 23484569386627204143",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "William",
+        "entity": "nom_client"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Wilson",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 16,
+        "end": 36,
+        "value": "23484569386627204143",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "rib",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9998819828033447,
+        "value": "23484569386627204143",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Alvin, Jones, 53780516170531842413",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Alvin",
+        "entity": "nom_client"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Jones",
+        "entity": "prenom_client"
+      },
+      {
+        "start": 14,
+        "end": 34,
+        "value": "53780516170531842413",
+        "entity": "rib"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nom_client",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999696016311646,
+        "value": "Alvin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "prenom_client",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9999681711196899,
+        "value": "jones",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "num_compte",
+        "start": 14,
+        "end": 34,
+        "confidence_entity": 0.5906233191490173,
+        "value": "53780516170531842413",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

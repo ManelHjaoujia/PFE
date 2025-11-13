@@ -1,0 +1,322 @@
+[
+  {
+    "text": "Salut, j’aimerais avoir des infos",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.8150683045387268
+    }
+  },
+  {
+    "text": "Hey, j’ai besoin d’aide",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.5795298218727112
+    }
+  },
+  {
+    "text": "bonjour monsieur je suis le client de bnp paribas je voudrais savoir le nombre daction que jai achete pour la banque",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.9999712705612183
+    }
+  },
+  {
+    "text": "bonjour je voulais vérifier mon salde actuelment",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_solde",
+      "confidence": 0.9996293783187866
+    }
+  },
+  {
+    "text": "bonjour pour moi je cherche juste le nbre d action",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.7803210616111755
+    }
+  },
+  {
+    "text": "bonjour jaimerai connaitre le nombre daction que jai",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "à bientôt",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.6855056285858154
+    }
+  },
+  {
+    "text": "Bonjour madame",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Bonjour, pouvez-vous m'aider ?",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9999948740005493
+    }
+  },
+  {
+    "text": "Bonjour l’agent",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "je voudrais connaitre le montant de solde de mon compte et les transactions les plus récentes",
+    "intent": "consult_solde",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 0.6921038031578064
+    }
+  },
+  {
+    "text": "bonjour ça c est bon c est que je viens de venir de joindre une agence et j ai été émerveillé de voir qu il y a 200000 actions en circulation mais aujourd hui je vois que mon portef",
+    "intent": "consult_actions",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9377836585044861
+    }
+  },
+  {
+    "text": "bonjour jai voulu voir les dernières opérations sur ma carte mais je nai rien trouvé et je ne comprends pas pourquoi peu importe merci",
+    "intent": "consult_operations",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.5184956192970276
+    }
+  },
+  {
+    "text": "hello could you tell me my account numbers please",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.5492370128631592
+    }
+  },
+  {
+    "text": "à la prochaine",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.4572167992591858
+    }
+  },
+  {
+    "text": "Bonsoir",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour je voulais savoir comment jachète des actionnés",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_actions",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.998238205909729
+    }
+  },
+  {
+    "text": "bonjour je souhaite recevoir mon forfait",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "demande_extrait",
+      "confidence": 0.8387011885643005
+    }
+  },
+  {
+    "text": "helllo where can i find my salaries history in my mobile banking",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 0.9580470323562622
+    }
+  },
+  {
+    "text": "bonne journée",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9464544057846069
+    }
+  },
+  {
+    "text": "ciao",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "Salut",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9993140697479248
+    }
+  },
+  {
+    "text": "Coucou",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour saviez vous quand je retire ma carte j ai 2 actions de plus pour mon compte a coutez",
+    "intent": "consult_actions",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9951874017715454
+    }
+  },
+  {
+    "text": "bonjour est ce que jai une demande dextrait de compte et si possible de me lenvoyer à ladresse email que jai donnée au préalable",
+    "intent": "demande_extrait",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9957958459854126
+    }
+  },
+  {
+    "text": "bonjour est ce que vous pouvez me dire si jai eu dautres opérations que lachat de ce produit",
+    "intent": "consult_operations",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 0.9997521042823792
+    }
+  },
+  {
+    "text": "i am an australian citizen and i have a australian passport with me i already have a french carte de sejour and i have a french bank account my question is do i need to have french health insurance to get a french carte de sejour",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "jeu de 200 euros a pratiquer sur le pc",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 0.9825279116630554
+    }
+  },
+  {
+    "text": "how do i pay my credit card bill online",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hei agent pai sl im blocked how can unblock me",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is it possible to transfer xx shares to a friend and do i have to pay any fees",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour je souhaiterais un solde merci",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_solde",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour je suis obsolé au numéro 1129935598",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "consult_solde",
+      "confidence": 0.6465402841567993
+    }
+  },
+  {
+    "text": "hola amigo estoy llamando para hacer una pregunta",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "fournir_infos",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Bonjour",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Bonjour, j’ai une question",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "bonjour cest philippe jaimerais savoir combien d'actions jai acheter latelier lindice a tellement chute jai acheter ma part du bon cote mais cest en baisse depuis un moment je veux",
+    "intent": "consult_actions",
+    "intent_prediction": {
+      "name": "autre_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "salut",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.999386191368103
+    }
+  },
+  {
+    "text": "bonjour bonsoir",
+    "intent": "autre_question",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.9530972242355347
+    }
+  }
+]

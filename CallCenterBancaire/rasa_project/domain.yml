@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - salutation
+  - consult_solde
+  - consult_actions
+  - demande_extrait
+  - consult_operations
+  - autre_question
+  - fournir_infos
+  - goodbye
+
+entities:
+  - rib
+  - num_compte
+  - nom_client
+  - prenom_client
+  - date_debut
+  - date_fin
+
+slots:
+  rib:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: rib
+
+  num_compte:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: num_compte
+
+  nom_client:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: nom_client
+
+  prenom_client:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: prenom_client
+
+  date_debut:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date_debut
+
+  date_fin:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date_fin
+
+responses:
+  utter_salutation:
+    - text: "Bonjour, comment puis-je vous aider aujourd’hui ?"
+
+  utter_consult_solde:
+      - text: "Pour consulter votre solde, veuillez fournir votre nom, prénom et numéro de compte ?"
+
+  utter_consult_actions:
+    - text: "Pour consulter le nombre d’actions, veuillez fournir votre nom, prénom, RIB et numéro de compte ?"
+
+  utter_demande_extrait:
+    - text: "Vous souhaitez un extrait de compte, veuillez fournir votre nom, prénom, numéro de compte, date_debut et date_fin?"
+
+  utter_consult_operations:
+    - text: "Vous souhaitez consulter vos dernières opérations, veuillez fournir votre nom, prénom et RIB ?"
+
+  utter_autre_question:
+    - text: "Bonjour, cette demande nécessite l’intervention d’un agent. Vous pouvez contacter notre service au 71 114 5786. "
+
+  utter_goodbye:
+    - text: "Au revoir ! N'hésitez pas à revenir si vous avez besoin d'une assistance complémentaire."
+
+actions:
+  - action_consulter_solde
+  - action_consulter_actions
+  - action_consulter_operations
+  - action_consulter_extrait
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
